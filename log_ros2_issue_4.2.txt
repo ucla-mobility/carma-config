@@ -1,0 +1,645 @@
+Starting CARMA background processes...
+Starting CARMA Platform foreground processes...
+Attaching to platform_ros2, carma-cohda-dsrc-driver, ssc_controller_driver, ros1_bridge, carma-mock-camera-driver, carma-novatel-oem7-driver-wrapper, roscore, lightbar-driver, velodyne-lidar-driver, platform
+[33mcarma-mock-camera-driver   |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[36mcarma-cohda-dsrc-driver    |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[32mcarma-novatel-oem7-driver-wrapper |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[36mcarma-cohda-dsrc-driver    |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[35mlightbar-driver            |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[34mplatform                   |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[36;1mplatform_ros2              |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[33;1mros1_bridge                |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[33;1mros1_bridge                |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[35;1mssc_controller_driver      |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[34;1mvelodyne-lidar-driver      |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[35mlightbar-driver            |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[32mcarma-novatel-oem7-driver-wrapper |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[34;1mvelodyne-lidar-driver      |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[35;1mssc_controller_driver      |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[33mcarma-mock-camera-driver   |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[36;1mplatform_ros2              |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-11-56-505359-carma-1
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[34mplatform                   |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[36mcarma-cohda-dsrc-driver    |[0m 1660011116.626192 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [52]
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [carma_component_container_mt-2]: process started with pid [54]
+[36mcarma-cohda-dsrc-driver    |[0m [driver_shutdown_ros2_node_exec-1] 1660011116.653966 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.653985 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-11-56-766768-carma-1
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[32mcarma-novatel-oem7-driver-wrapper |[0m 1660011116.825504 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-11-56-841874-carma-1
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[32mcarma-novatel-oem7-driver-wrapper |[0m Task exception was never retrieved
+[32mcarma-novatel-oem7-driver-wrapper |[0m future: <Task finished name='Task-2' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=TypeError("Expected 'parameters' to be one of [<class 'str'>, <class 'launch.substitution.Substitution'>, <class 'collections.abc.Iterable'>], but got 'None' of type '<class 'NoneType'>'")>
+[32mcarma-novatel-oem7-driver-wrapper |[0m Traceback (most recent call last):
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     await self.__process_event(next_event)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 248, in __process_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     visit_all_entities_and_collect_futures(entity, self.__context))
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   [Previous line repeated 5 more times]
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 38, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     sub_entities = entity.visit(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/action.py", line 108, in visit
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return self.execute(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/actions/include_launch_description.py", line 130, in execute
+[32mcarma-novatel-oem7-driver-wrapper |[0m     launch_description = self.__launch_description_source.get_launch_description(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_source.py", line 84, in get_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     self._get_launch_description(self.__expanded_location)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_description_source.py", line 51, in _get_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return get_launch_description_from_python_launch_file(location)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_file_utilities.py", line 68, in get_launch_description_from_python_launch_file
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return getattr(launch_file_module, 'generate_launch_description')()
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "//opt/carma/install/novatel_oem7_driver/share/novatel_oem7_driver/launch/oem7_net.launch.py", line 40, in generate_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     node = Node(
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/actions/node.py", line 207, in __init__
+[32mcarma-novatel-oem7-driver-wrapper |[0m     normalized_params = normalize_parameters(parameters)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/utilities/normalize_parameters.py", line 192, in normalize_parameters
+[32mcarma-novatel-oem7-driver-wrapper |[0m     ensure_argument_type(param, SomeSubstitutionsType_types_tuple, 'parameters')
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/ensure_argument_type_impl.py", line 73, in ensure_argument_type
+[32mcarma-novatel-oem7-driver-wrapper |[0m     raise TypeError(error_msg_template.format(
+[32mcarma-novatel-oem7-driver-wrapper |[0m TypeError: Expected 'parameters' to be one of [<class 'str'>, <class 'launch.substitution.Substitution'>, <class 'collections.abc.Iterable'>], but got 'None' of type '<class 'NoneType'>'
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [66]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: process started with pid [68]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011116.875398 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[32mcarma-novatel-oem7-driver-wrapper |[0m [driver_shutdown_ros2_node_exec-1] 1660011116.875399 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.895797941 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/dsrc_driver/lib/libdsrc_driver_node.so
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.897839332 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<DSRCApplication::Node>
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.897866801 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<DSRCApplication::Node>
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.897895764 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011116.901903696 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/dsrc_driver_node' in container '/hardware_interface/dsrc_driver_container'
+[34;1mvelodyne-lidar-driver      |[0m 1660011116.957986 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [74]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [velodyne_convert_node-2]: process started with pid [76]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [component_container-3]: process started with pid [78]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [carma_component_container_mt-4]: process started with pid [80]
+[34;1mvelodyne-lidar-driver      |[0m [driver_shutdown_ros2_node_exec-1] 1660011116.987241 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011116.988278 [0] component_: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011116.988295 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [velodyne_convert_node-2] 1660011116.989172 [0] velodyne_c: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [velodyne_convert_node-2] 1660011116.995844339 | INFO | Convert:107 | correction angles: /opt/ros/foxy/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011117.089548234 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/carma_novatel_driver_wrapper/lib/libcarma_novatel_wrapper_node.so
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011117.091565979 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<carma_novatel_driver_wrapper::CarmaNovatelDriverWrapper>
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011117.091589560 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<carma_novatel_driver_wrapper::CarmaNovatelDriverWrapper>
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011117.091614524 | INFO | create_node_options:176 | Found log-level argument: WARN
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011117.096713659 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/carma_novatel_driver_wrapper_node' in container '/hardware_interface/carma_novatel_driver_wrapper_container'
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.226797531 | INFO | create_component_factory:102 | Load Library: /opt/ros/foxy/lib/libvelodyne_driver.so
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.227609965 | INFO | create_component_factory:115 | Found class: rclcpp_components::NodeFactoryTemplate<velodyne_driver::VelodyneDriver>
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.227632831 | INFO | create_component_factory:117 | Instantiate class: rclcpp_components::NodeFactoryTemplate<velodyne_driver::VelodyneDriver>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011117.228912540 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/velodyne_lidar_driver_wrapper/lib/libvelodyne_lidar_driver_wrapper_node.so
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011117.230378783 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<velodyne_lidar_driver_wrapper::Node>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011117.230404241 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<velodyne_lidar_driver_wrapper::Node>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011117.230430059 | INFO | create_node_options:176 | Found log-level argument: WARN
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231762790 | INFO | VelodyneDriver:115 | Velodyne VLP-32C rotating at 600.000000 RPM
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231806207 | INFO | VelodyneDriver:121 | publishing 151 packets per scan
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231820024 | INFO | VelodyneDriver:124 | Cut at specific angle feature deactivated.
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/velodyne_driver_node' in container '/hardware_interface/velodyne_driver_container'
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231831584 | INFO | VelodyneDriver:146 | expected frequency: 9.980 (Hz)
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231890129 | INFO | Input:87 | Only accepting packets from IP address: 192.168.1.201
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011117.231906828 | INFO | InputSocket:116 | Opening UDP socket: port 2368
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011117.239342115 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/velodyne_lidar_driver_wrapper_node' in container '/hardware_interface/velodyne_lidar_driver_wrapper_container'
+[36;1mplatform_ros2              |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-11-57-405175-carma-1
+[36;1mplatform_ros2              |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[36;1mplatform_ros2              |[0m 1660011117.536903 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m Failed to process line: log4j.logger.ros.roscpp.superdebug=WARN
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: process started with pid [100]
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: process started with pid [102]
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: process started with pid [104]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-4]: process started with pid [106]
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: process started with pid [108]
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: process started with pid [110]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: process started with pid [112]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: process started with pid [114]
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: process started with pid [116]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-10]: process started with pid [118]
+[36;1mplatform_ros2              |[0m [INFO] [guidance_controller-11]: process started with pid [120]
+[36;1mplatform_ros2              |[0m [INFO] [system_controller-12]: process started with pid [122]
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011117.963978 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011117.963980 [0] lifecycle_: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011117.965362 [0] localizati: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011117.967192 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011117.973720 [0] drivers_co: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011117.988825 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011117.990730 [0] v2x_contro: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011117.991451 [0] system_con: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011117.994437 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.007615473 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/mobilitypath_publisher/lib/libmobilitypath_publisher_lib.so
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.011497 [0] robot_stat: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.018990318 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011118.023954 [0] guidance_c: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011118.030237 [0] environmen: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.040748325 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<mobilitypath_publisher::MobilityPathPublication>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.040800498 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<mobilitypath_publisher::MobilityPathPublication>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.040853550 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Parsing robot urdf xml string.
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link host_vehicle had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link novatel_gnss had 1 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link ned_heading had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link novatel_imu had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link vehicle_front had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link velodyne had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link mobileye had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fc had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fl had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fr had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_rl had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_rr had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043682376 | INFO | setupURDF:186 | got segment base_link
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043883159 | INFO | setupURDF:186 | got segment host_vehicle
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043908160 | INFO | setupURDF:186 | got segment mobileye
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043923622 | INFO | setupURDF:186 | got segment ned_heading
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043936683 | INFO | setupURDF:186 | got segment novatel_gnss
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043950102 | INFO | setupURDF:186 | got segment novatel_imu
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043963255 | INFO | setupURDF:186 | got segment radar_fc
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043975735 | INFO | setupURDF:186 | got segment radar_fl
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.043989041 | INFO | setupURDF:186 | got segment radar_fr
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.044002956 | INFO | setupURDF:186 | got segment radar_rl
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.044016579 | INFO | setupURDF:186 | got segment radar_rr
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.044029654 | INFO | setupURDF:186 | got segment vehicle_front
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011118.044042835 | INFO | setupURDF:186 | got segment velodyne
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.079801537 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/mobilitypath_publisher_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.085015939 | INFO | on_load_node:223 | Got request to load node: lidar_to_map_frame_transformer but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.085535837 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/bsm_generator/lib/libbsm_generator_node_lib.so
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.087772192 | INFO | on_load_node:223 | Got request to load node: points_map_filter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.090019990 | INFO | on_load_node:223 | Got request to load node: lidar_frame_transformer but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.091992661 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<bsm_generator::BSMGenerator>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.092031779 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<bsm_generator::BSMGenerator>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.092107339 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.093989401 | INFO | on_load_node:223 | Got request to load node: ray_ground_filter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.097843844 | INFO | on_load_node:223 | Got request to load node: euclidean_cluster but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.100169365 | INFO | on_load_node:223 | Got request to load node: bounding_box_converter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011118.105059924 | INFO | on_load_node:223 | Got request to load node: tracking_nodes_node but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.106349668 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/bsm_generator_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.110293627 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/cpp_message/lib/libcpp_message_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.114441502 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<cpp_message::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.114476082 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<cpp_message::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.114497096 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.123558252 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/cpp_message_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.126292323 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/j2735_convertor/lib/libj2735_convertor_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.128920641 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<j2735_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.128948978 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<j2735_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.128965877 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011118.138088455 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/j2735_convertor_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.196402948 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/carma_wm_ctrl/lib/libcarma_wm_ctrl_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011118.203029043 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/gnss_to_map_convertor/lib/libgnss_to_map_convertor_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011118.222282625 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<gnss_to_map_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011118.222325300 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<gnss_to_map_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011118.222352825 | INFO | create_node_options:176 | Found log-level argument: WARN
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011118.232837269 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011118.238410292 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.242663525 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<carma_wm_ctrl::WMBroadcasterNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.242706577 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<carma_wm_ctrl::WMBroadcasterNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.242786241 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/localization/gnss_to_map_convertor' in container '/localization/gnss_to_map_convertor_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.258736822 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/carma_wm_broadcaster' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.262972639 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/object_detection_tracking/lib/libobject_detection_tracking_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.268123855 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<object::ObjectDetectionTrackingNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.268151041 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<object::ObjectDetectionTrackingNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.268166615 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.278943368 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/external_object' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.286683780 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/object_visualizer/lib/libobject_visualizer_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.287536194 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<object_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.287560688 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<object_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.287577599 | INFO | create_node_options:176 | Found log-level argument: WARN
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: sending signal 'SIGINT' to process[carma_component_container_mt-2]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: sending signal 'SIGINT' to process[driver_shutdown_ros2_node_exec-1]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011118.293336332 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660011118.300200437 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660011118.300638091 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/object_visualizer_node' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.377038331 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/mobilitypath_visualizer/lib/libmobilitypath_visualizer_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.391040205 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<mobilitypath_visualizer::MobilityPathVisualizer>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.391078334 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<mobilitypath_visualizer::MobilityPathVisualizer>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.391152488 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.404605304 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/guidance/mobilitypath_visualizer_node' in container '/guidance/carma_guidance_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.408503455 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/trajectory_executor/lib/libtrajectory_executor_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.409448210 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<trajectory_executor::TrajectoryExecutor>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.409472796 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<trajectory_executor::TrajectoryExecutor>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.409525701 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.418317304 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/guidance/trajectory_executor_node' in container '/guidance/carma_guidance_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.421956847 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/route/lib/libroute_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.434531606 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<route::Route>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.434571279 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<route::Route>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.434640329 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.444553293 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.445182591 | INFO | WMListener:53 | Loaded config speed limit: 45
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011118.445217173 | INFO | WMListener:54 | Loaded vehicle participant type: vehicle:car
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/guidance/route_node' in container '/guidance/carma_guidance_container'
+[36;1mplatform_ros2              |[0m [ERROR] [carma_component_container_mt-4]: process has died [pid 106, exit code -11, cmd '/opt/carma/install_ros2/carma_ros2_utils/lib/carma_ros2_utils/carma_component_container_mt --ros-args -r __node:=external_objects_container -r __ns:=/environment'].
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011119.234052854 | WARN | getPacket:193 | Velodyne poll() timeout
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process has finished cleanly [pid 66]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: process[driver_shutdown_ros2_node_exec-1] was required: shutting down launched system
+[32mcarma-novatel-oem7-driver-wrapper |[0m Task exception was never retrieved
+[32mcarma-novatel-oem7-driver-wrapper |[0m future: <Task finished name='Task-24' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[32mcarma-novatel-oem7-driver-wrapper |[0m Traceback (most recent call last):
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     await self.__process_event(next_event)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     entities = event_handler.handle(event, self.__context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[32mcarma-novatel-oem7-driver-wrapper |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[32mcarma-novatel-oem7-driver-wrapper |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[32mcarma-novatel-oem7-driver-wrapper |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: process has finished cleanly [pid 68]
+[32mcarma-novatel-oem7-driver-wrapper exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011120.235211238 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011121.236296839 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011122.236865335 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011123.079116871 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /environment/external_objects_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011123.079264537 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /environment/transform_listener_impl_7f4550008a58 this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011123.238104079 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011124.239266228 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011124.583091978 | ERROR | wait_on_change_state_future:221 | Server time out while getting current state for node
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011125.240421286 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011126.083431153 | ERROR | wait_on_change_state_future:221 | Server time out while getting current state for node
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011126.240944028 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011127.242208486 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011127.583714139 | ERROR | wait_on_change_state_future:221 | Server time out while getting current state for node
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.584535590 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 1
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.589671490 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /localization/gnss_to_map_convertor_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.590063014 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /localization/transform_listener_impl_7f024402fff8 this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.595706004 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /message/carma_v2x_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.599414755 | INFO | handle_on_configure:47 | MobilityPathPublication trying to configure
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.599480587 | INFO | handle_on_configure:56 | Loaded params: mobilitypath_publisher::Config { 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] path_pub_rate: 20
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] vehicle_id: DEV-VEH
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] }
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.603701904 | INFO | handle_on_configure:55 | BSMGenerator trying to configure
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.603763690 | INFO | handle_on_configure:67 | Loaded params: bsm_generator::Config { 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] bsm_generation_frequency: 10
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] bsm_id_rotation_enabled: 1
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] bsm_message_id: 0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] vehicle_length: 5
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] vehicle_width: 2.5
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] }
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.631722312 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /guidance/carma_guidance_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.635019451 | INFO | handle_on_configure:66 | Loaded params mobilitypath_visualizer::Config { 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] timer_cb_rate: 100
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] x: 0.5
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] y: 0.5
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] z: 1
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] t: 3
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] host_id: DEV-VEH
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] }
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.639026667 | INFO | handle_on_configure:67 | TrajectoryExecutor trying to configure
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.639075057 | INFO | handle_on_configure:77 | Loaded params: trajectory_executor::Config { 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] trajectory_publish_rate: 10
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] default_control_plugin: Pure Pursuit
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] default_control_plugin_topic: /guidance/pure_pursuit/plan_trajectory
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] }
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.641274796 | INFO | handle_on_configure:58 | Route trying to configure
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.641325705 | INFO | handle_on_configure:70 | Loaded params: route::Config { 
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] max_crosstrack_error: 2
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] destination_downtrack_range: 10
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] route_spin_rate: 10
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] cte_max_count: 4
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] route_file_path: /opt/carma/routes/
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] }
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.650108003 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /hardware_interface/velodyne_lidar_driver_wrapper_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.650229540 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /hardware_interface/dsrc_driver_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.650296736 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /hardware_interface/velodyne_convert_node this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.650364728 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /hardware_interface/velodyne_driver_container this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.650390862 | WARN | get_nodes_in_namespace:329 | Failed to find lifecycle services for node: /hardware_interface/velodyne_driver_node this node will not be managed. NOTE: If this node is wrapped by a lifecycle component that is managed then this is not an issue.
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.655188089 | INFO | handle_on_configure:38 | Velodyne Driver wrapper trying to configure
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.655245966 | INFO | handle_on_configure:44 | Loaded config: VelodyneLidarDriverWrapper::Config { 
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] point_cloud_timeout: 0.5
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.656759435 | INFO | handle_on_configure:86 | dsrc_driver trying to configure
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.656826483 | INFO | handle_on_configure:96 | Loaded params: dsrc_driver::Config { 
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] listening_port: 5398
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] dsrc_listening_port: 1516
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] dsrc_address: 192.168.88.40
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] }
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.656913848 | INFO | operator():297 | Attempting to connect to OBU
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.656944586 | INFO | operator():299 | Connecting to: 192.168.88.40, 1516
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.656954010 | INFO | operator():300 | Local port: 5398
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.659554797 | ERROR | startup_delay_callback:110 | System could not be configured on startup. Shutting down.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011127.659735737 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state unconfigured
+[36mcarma-cohda-dsrc-driver    |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.660391752 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36mcarma-cohda-dsrc-driver    |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.660436936 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.660471658 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.660501260 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.660862706 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011127.659754136 | ERROR | change_state:381 | Unable to start transition 7 from current state unconfigured: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.660883848 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[34;1mvelodyne-lidar-driver      |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.661318199 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[34;1mvelodyne-lidar-driver      |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.661363040 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.659786847 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.659803183 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36mcarma-cohda-dsrc-driver    |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.662157851 | ERROR | change_state:406 | Failed to finish transition 6. Current state is now: finalized (Could not publish transition: publisher's context is invalid, at /tmp/binarydeb/ros-foxy-rcl-1.1.13/src/rcl/publisher.c:423, at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:367)
+[34;1mvelodyne-lidar-driver      |[0m [driver_shutdown_ros2_node_exec-1] 1660011127.662263540 | ERROR | change_state:406 | Failed to finish transition 6. Current state is now: finalized (Could not publish transition: publisher's context is invalid, at /tmp/binarydeb/ros-foxy-rcl-1.1.13/src/rcl/publisher.c:423, at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:367)
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.659849431 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.659868949 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.662954820 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.659886409 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.659905426 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011127.662971171 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.662996337 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011127.663017176 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.659898571 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.659916731 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.659950169 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.659984105 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.660009902 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.659927597 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.659946257 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011127.660095345 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 6 found for current state unconfigured
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011127.660107093 | ERROR | change_state:381 | Unable to start transition 6 from current state unconfigured: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.660215757 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 6
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011127.660315106 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011127.660336281 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011127.660908966 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011127.660923446 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660386584 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660402769 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660676061 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660707708 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660721730 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660738150 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660708797 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.660723220 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.660422349 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011127.661013546 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.660494580 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.660862355 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.660890676 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.660905338 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660558097 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660574152 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660590786 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660575095 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660759968 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.660773488 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661318531 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661347561 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.660572174 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.660602115 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.660976204 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.660700676 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.660739953 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.661430863 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.661420587 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 6
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661450798 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661463661 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661475780 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011127.661464500 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011127.661466507 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011127.661589717 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661670847 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661685720 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661685729 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661748904 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661920246 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661936690 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661956077 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011127.661937502 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.661879190 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.661911912 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.662408889 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011127.662441709 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.662610713 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 6
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011127.662656495 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 6
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011128.243436486 | WARN | getPacket:193 | Velodyne poll() timeout
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process has finished cleanly [pid 52]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process has finished cleanly [pid 74]
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch]: process[driver_shutdown_ros2_node_exec-1] was required: shutting down launched system
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch]: process[driver_shutdown_ros2_node_exec-1] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011128.663131610 | ERROR | wait_on_change_state_future:221 | Server time out while getting current state for node
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011128.663303611 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [carma_component_container_mt-2]: sending signal 'SIGINT' to process[carma_component_container_mt-2]
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660011129.132987308 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] terminate called without an active exception
+[36mcarma-cohda-dsrc-driver    |[0m [ERROR] [carma_component_container_mt-2]: process has died [pid 54, exit code -6, cmd '/opt/carma/install/carma_ros2_utils/lib/carma_ros2_utils/carma_component_container_mt --ros-args -r __node:=dsrc_driver_container -r __ns:=/hardware_interface'].
+[36mcarma-cohda-dsrc-driver exited with code 0
+[0m[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011129.663564730 | ERROR | wait_on_change_state_future:221 | Server time out while getting current state for node
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011129.663997884 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 6
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011129.664441604 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660011129.664498546 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011129.664581848 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660011129.664635992 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011129.664727536 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 7 found for current state inactive
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011129.664755522 | ERROR | change_state:381 | Unable to start transition 7 from current state inactive: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011129.664755995 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [guidance_controller-11] 1660011129.664775495 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011129.664811167 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660011129.664835181 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011129.864779922 | ERROR | waitForService:121 | Service /environment/carma_wm_broadcaster/change_state is not available.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.065125450 | ERROR | waitForService:121 | Service /environment/external_object/change_state is not available.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.265351702 | ERROR | waitForService:121 | Service /environment/object_visualizer_node/change_state is not available.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.265489425 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 7
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [carma_component_container_mt-4]: sending signal 'SIGINT' to process[carma_component_container_mt-4]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [component_container-3]: sending signal 'SIGINT' to process[component_container-3]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [velodyne_convert_node-2]: sending signal 'SIGINT' to process[velodyne_convert_node-2]
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011129.244626359 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011130.244940621 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011130.275389145 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011130.276173901 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[34;1mvelodyne-lidar-driver      |[0m [velodyne_convert_node-2] 1660011130.276749054 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660011130.283570605 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[33;1mros1_bridge                |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.466023517 | ERROR | waitForService:121 | Service /environment/carma_wm_broadcaster/change_state is not available.
+[33;1mros1_bridge                |[0m ERROR: Unable to communicate with master!
+[33;1mros1_bridge exited with code 1
+[0m[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.666293730 | ERROR | waitForService:121 | Service /environment/external_object/change_state is not available.
+[35mlightbar-driver            |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011130.866530175 | ERROR | waitForService:121 | Service /environment/object_visualizer_node/change_state is not available.
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011130.866764185 | WARN | rcl_lifecycle_get_transition_by_id:313 | No transition matching 5 found for current state finalized
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011130.866788538 | ERROR | change_state:381 | Unable to start transition 5 from current state finalized: Transition is not registered., at /tmp/binarydeb/ros-foxy-rcl-lifecycle-1.1.13/src/rcl_lifecycle.c:350
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011131.066840177 | ERROR | waitForService:121 | Service /environment/carma_wm_broadcaster/change_state is not available.
+[35;1mssc_controller_driver      |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660011131.246164723 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011131.266949358 | ERROR | waitForService:121 | Service /environment/external_object/change_state is not available.
+[33mcarma-mock-camera-driver   |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [velodyne_convert_node-2]: process has finished cleanly [pid 76]
+[34;1mvelodyne-lidar-driver      |[0m Task exception was never retrieved
+[34;1mvelodyne-lidar-driver      |[0m future: <Task finished name='Task-65' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[34;1mvelodyne-lidar-driver      |[0m Traceback (most recent call last):
+[34;1mvelodyne-lidar-driver      |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[34;1mvelodyne-lidar-driver      |[0m     await self.__process_event(next_event)
+[34;1mvelodyne-lidar-driver      |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[34;1mvelodyne-lidar-driver      |[0m     entities = event_handler.handle(event, self.__context)
+[34;1mvelodyne-lidar-driver      |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[34;1mvelodyne-lidar-driver      |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[34;1mvelodyne-lidar-driver      |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[34;1mvelodyne-lidar-driver      |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[34;1mvelodyne-lidar-driver      |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[34;1mvelodyne-lidar-driver      |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[34;1mvelodyne-lidar-driver      |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [carma_component_container_mt-4]: process has finished cleanly [pid 80]
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011131.467123847 | ERROR | waitForService:121 | Service /environment/object_visualizer_node/change_state is not available.
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660011131.467192823 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011131.467423663 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011131.467470317 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011131.467483974 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011131.467493048 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[36;1mplatform_ros2              |[0m [system_controller-12] 1660011131.467501722 | WARN | wait_on_change_state_future:235 | Failed to trigger transition 5
+[34mplatform                   |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [component_container-3]: process has finished cleanly [pid 78]
+[35;1mssc_controller_driver      |[0m xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[34;1mvelodyne-lidar-driver exited with code 1
+[0m[36;1mplatform_ros2              |[0m [INFO] [system_controller-12]: process has finished cleanly [pid 122]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[system_controller-12] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m [INFO] [guidance_controller-11]: sending signal 'SIGINT' to process[guidance_controller-11]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-10]: sending signal 'SIGINT' to process[carma_component_container_mt-10]
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: sending signal 'SIGINT' to process[v2x_controller-9]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: sending signal 'SIGINT' to process[carma_component_container_mt-8]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: sending signal 'SIGINT' to process[carma_component_container_mt-7]
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: sending signal 'SIGINT' to process[localization_controller-6]
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: sending signal 'SIGINT' to process[environment_perception_controller-5]
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: sending signal 'SIGINT' to process[lifecycle_component_wrapper_mt-3]
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: sending signal 'SIGINT' to process[drivers_controller-1]
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011134.343309210 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011134.346342599 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011134.347971152 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011134.353423794 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660011134.355537488 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660011134.359243403 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660011134.361222821 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011134.362180673 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011134.371317973 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011134.404077445 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011134.408496694 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-10] 1660011134.431819171 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011134.446069192 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660011134.473435321 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [WARNING] [launch_ros.actions.load_composable_nodes]: Abandoning wait for the '/environment/external_objects_container/_container/load_node' service response, due to shutdown.
+[36;1mplatform_ros2              |[0m Future exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Future finished exception=InvalidHandle('Tried to use a handle that has been destroyed.')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+[36;1mplatform_ros2              |[0m     result = self.fn(*self.args, **self.kwargs)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/actions/load_composable_nodes.py", line 174, in _load_in_sequence
+[36;1mplatform_ros2              |[0m     self._load_node(next_load_node_request, context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/actions/load_composable_nodes.py", line 96, in _load_node
+[36;1mplatform_ros2              |[0m     while not self.__rclpy_load_node_client.wait_for_service(timeout_sec=1.0):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/client.py", line 164, in wait_for_service
+[36;1mplatform_ros2              |[0m     return self.service_is_ready()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/client.py", line 143, in service_is_ready
+[36;1mplatform_ros2              |[0m     with self.handle as capsule:
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/handle.py", line 124, in __enter__
+[36;1mplatform_ros2              |[0m     return self._get_capsule()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/rclpy/handle.py", line 106, in _get_capsule
+[36;1mplatform_ros2              |[0m     raise InvalidHandle('Tried to use a handle that has been destroyed.')
+[36;1mplatform_ros2              |[0m rclpy.handle.InvalidHandle: Tried to use a handle that has been destroyed.
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: process has finished cleanly [pid 102]
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: process has finished cleanly [pid 104]
+[36;1mplatform_ros2              |[0m [INFO] [guidance_controller-11]: process has finished cleanly [pid 120]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[guidance_controller-11] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-216' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: process has finished cleanly [pid 110]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[localization_controller-6] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-218' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: process has finished cleanly [pid 116]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[v2x_controller-9] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-220' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: process has finished cleanly [pid 112]
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: process has finished cleanly [pid 108]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[environment_perception_controller-5] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-223' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: process has finished cleanly [pid 100]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[drivers_controller-1] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-225' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-10]: process has finished cleanly [pid 118]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: process has finished cleanly [pid 114]
+[36;1mplatform_ros2 exited with code 1
+[0mGracefully stopping... (press Ctrl+C again to force)

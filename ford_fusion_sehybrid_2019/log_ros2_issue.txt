@@ -1,0 +1,1279 @@
+Starting CARMA background processes...
+Starting CARMA Platform foreground processes...
+Attaching to carma-mock-camera-driver, ssc_controller_driver, carma-cohda-dsrc-driver, lightbar-driver, platform_ros2, carma-novatel-oem7-driver-wrapper, ros1_bridge, roscore, velodyne-lidar-driver, platform
+[33mcarma-mock-camera-driver   |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[34mplatform                   |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[36;1mplatform_ros2              |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[33;1mros1_bridge                |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[35;1mssc_controller_driver      |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[33;1mros1_bridge                |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m /home/carma/.base-image/entrypoint.sh: line 23: [: too many arguments
+[35mlightbar-driver            |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[36mcarma-cohda-dsrc-driver    |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[32mcarma-novatel-oem7-driver-wrapper |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[34;1mvelodyne-lidar-driver      |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[33mcarma-mock-camera-driver   |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[35;1mssc_controller_driver      |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[34mplatform                   |[0m wait-for-it.sh: waiting 15 seconds for localhost:11311
+[36;1mplatform_ros2              |[0m ROS_DISTRO was set to 'noetic' before. Please make sure that the environment does not mix paths from different distributions.
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-00-02-235452-carma-1
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[36mcarma-cohda-dsrc-driver    |[0m 1660010402.354092 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-00-02-358501-carma-1
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [52]
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [carma_component_container_mt-2]: process started with pid [54]
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.383325 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36mcarma-cohda-dsrc-driver    |[0m [driver_shutdown_ros2_node_exec-1] 1660010402.384199 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[32mcarma-novatel-oem7-driver-wrapper |[0m 1660010402.493474 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-00-02-523569-carma-1
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[32mcarma-novatel-oem7-driver-wrapper |[0m Task exception was never retrieved
+[32mcarma-novatel-oem7-driver-wrapper |[0m future: <Task finished name='Task-2' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=TypeError("Expected 'parameters' to be one of [<class 'str'>, <class 'launch.substitution.Substitution'>, <class 'collections.abc.Iterable'>], but got 'None' of type '<class 'NoneType'>'")>
+[32mcarma-novatel-oem7-driver-wrapper |[0m Traceback (most recent call last):
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     await self.__process_event(next_event)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 248, in __process_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     visit_all_entities_and_collect_futures(entity, self.__context))
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   [Previous line repeated 5 more times]
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 38, in visit_all_entities_and_collect_futures
+[32mcarma-novatel-oem7-driver-wrapper |[0m     sub_entities = entity.visit(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/action.py", line 108, in visit
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return self.execute(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/actions/include_launch_description.py", line 130, in execute
+[32mcarma-novatel-oem7-driver-wrapper |[0m     launch_description = self.__launch_description_source.get_launch_description(context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_source.py", line 84, in get_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     self._get_launch_description(self.__expanded_location)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_description_source.py", line 51, in _get_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return get_launch_description_from_python_launch_file(location)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_file_utilities.py", line 68, in get_launch_description_from_python_launch_file
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return getattr(launch_file_module, 'generate_launch_description')()
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "//opt/carma/install/novatel_oem7_driver/share/novatel_oem7_driver/launch/oem7_net.launch.py", line 40, in generate_launch_description
+[32mcarma-novatel-oem7-driver-wrapper |[0m     node = Node(
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/actions/node.py", line 207, in __init__
+[32mcarma-novatel-oem7-driver-wrapper |[0m     normalized_params = normalize_parameters(parameters)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/utilities/normalize_parameters.py", line 192, in normalize_parameters
+[32mcarma-novatel-oem7-driver-wrapper |[0m     ensure_argument_type(param, SomeSubstitutionsType_types_tuple, 'parameters')
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/ensure_argument_type_impl.py", line 73, in ensure_argument_type
+[32mcarma-novatel-oem7-driver-wrapper |[0m     raise TypeError(error_msg_template.format(
+[32mcarma-novatel-oem7-driver-wrapper |[0m TypeError: Expected 'parameters' to be one of [<class 'str'>, <class 'launch.substitution.Substitution'>, <class 'collections.abc.Iterable'>], but got 'None' of type '<class 'NoneType'>'
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [66]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: process started with pid [68]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.551008 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[32mcarma-novatel-oem7-driver-wrapper |[0m [driver_shutdown_ros2_node_exec-1] 1660010402.552914 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.625075824 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/dsrc_driver/lib/libdsrc_driver_node.so
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.627333587 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<DSRCApplication::Node>
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.627360095 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<DSRCApplication::Node>
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.627384891 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36mcarma-cohda-dsrc-driver    |[0m [carma_component_container_mt-2] 1660010402.631150484 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36mcarma-cohda-dsrc-driver    |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/dsrc_driver_node' in container '/hardware_interface/dsrc_driver_container'
+[34;1mvelodyne-lidar-driver      |[0m 1660010402.641073 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process started with pid [74]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [velodyne_convert_node-2]: process started with pid [76]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [component_container-3]: process started with pid [78]
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [carma_component_container_mt-4]: process started with pid [80]
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.672226 [0] component_: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [driver_shutdown_ros2_node_exec-1] 1660010402.672242 [0] driver_shu: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.672248 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [velodyne_convert_node-2] 1660010402.675256 [0] velodyne_c: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[34;1mvelodyne-lidar-driver      |[0m [velodyne_convert_node-2] 1660010402.681687528 | INFO | Convert:107 | correction angles: /opt/ros/foxy/share/velodyne_pointcloud/params/VeloView-VLP-32C.yaml
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.764506987 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/carma_novatel_driver_wrapper/lib/libcarma_novatel_wrapper_node.so
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.766945181 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<carma_novatel_driver_wrapper::CarmaNovatelDriverWrapper>
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.766970328 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<carma_novatel_driver_wrapper::CarmaNovatelDriverWrapper>
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.766997217 | INFO | create_node_options:176 | Found log-level argument: WARN
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010402.771974735 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/carma_novatel_driver_wrapper_node' in container '/hardware_interface/carma_novatel_driver_wrapper_container'
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.910713447 | INFO | create_component_factory:102 | Load Library: /opt/ros/foxy/lib/libvelodyne_driver.so
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.911754191 | INFO | create_component_factory:115 | Found class: rclcpp_components::NodeFactoryTemplate<velodyne_driver::VelodyneDriver>
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.911775276 | INFO | create_component_factory:117 | Instantiate class: rclcpp_components::NodeFactoryTemplate<velodyne_driver::VelodyneDriver>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.912631407 | INFO | create_component_factory:118 | Load Library: /opt/carma/install/velodyne_lidar_driver_wrapper/lib/libvelodyne_lidar_driver_wrapper_node.so
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.914178971 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<velodyne_lidar_driver_wrapper::Node>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.914208491 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<velodyne_lidar_driver_wrapper::Node>
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.914233782 | INFO | create_node_options:176 | Found log-level argument: WARN
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917563889 | INFO | VelodyneDriver:115 | Velodyne VLP-32C rotating at 600.000000 RPM
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917612966 | INFO | VelodyneDriver:121 | publishing 151 packets per scan
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917627617 | INFO | VelodyneDriver:124 | Cut at specific angle feature deactivated.
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917639241 | INFO | VelodyneDriver:146 | expected frequency: 9.980 (Hz)
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917707751 | INFO | Input:87 | Only accepting packets from IP address: 192.168.1.201
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/velodyne_driver_node' in container '/hardware_interface/velodyne_driver_container'
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010402.917725283 | INFO | InputSocket:116 | Opening UDP socket: port 2368
+[34;1mvelodyne-lidar-driver      |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/hardware_interface/velodyne_lidar_driver_wrapper_node' in container '/hardware_interface/velodyne_lidar_driver_wrapper_container'
+[34;1mvelodyne-lidar-driver      |[0m [carma_component_container_mt-4] 1660010402.919479034 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch]: All log files can be found below /opt/carma/logs/2022-08-09-02-00-03-106925-carma-1
+[36;1mplatform_ros2              |[0m [INFO] [launch]: Default logging verbosity is set to INFO
+[36;1mplatform_ros2              |[0m 1660010403.247538 [0]       ros2: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-2' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=NameError("name 'trajectory_visualizer_param_file' is not defined")>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 248, in __process_event
+[36;1mplatform_ros2              |[0m     visit_all_entities_and_collect_futures(entity, self.__context))
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[36;1mplatform_ros2              |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[36;1mplatform_ros2              |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 45, in visit_all_entities_and_collect_futures
+[36;1mplatform_ros2              |[0m     futures_to_return += visit_all_entities_and_collect_futures(sub_entity, context)
+[36;1mplatform_ros2              |[0m   [Previous line repeated 4 more times]
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/utilities/visit_all_entities_and_collect_futures_impl.py", line 38, in visit_all_entities_and_collect_futures
+[36;1mplatform_ros2              |[0m     sub_entities = entity.visit(context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/action.py", line 108, in visit
+[36;1mplatform_ros2              |[0m     return self.execute(context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/actions/include_launch_description.py", line 130, in execute
+[36;1mplatform_ros2              |[0m     launch_description = self.__launch_description_source.get_launch_description(context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_source.py", line 84, in get_launch_description
+[36;1mplatform_ros2              |[0m     self._get_launch_description(self.__expanded_location)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_description_source.py", line 51, in _get_launch_description
+[36;1mplatform_ros2              |[0m     return get_launch_description_from_python_launch_file(location)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_description_sources/python_launch_file_utilities.py", line 68, in get_launch_description_from_python_launch_file
+[36;1mplatform_ros2              |[0m     return getattr(launch_file_module, 'generate_launch_description')()
+[36;1mplatform_ros2              |[0m   File "/opt/carma/install_ros2/carma/share/carma/launch/guidance.launch.py", line 242, in generate_launch_description
+[36;1mplatform_ros2              |[0m     trajectory_visualizer_param_file
+[36;1mplatform_ros2              |[0m NameError: name 'trajectory_visualizer_param_file' is not defined
+[36;1mplatform_ros2              |[0m Failed to process line: log4j.logger.ros.roscpp.superdebug=WARN
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: process started with pid [100]
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: process started with pid [102]
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: process started with pid [104]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-4]: process started with pid [106]
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: process started with pid [108]
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: process started with pid [110]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: process started with pid [112]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: process started with pid [114]
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: process started with pid [116]
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.518805 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.523175 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.523176 [0] carma_comp: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [environment_perception_controller-5] 1660010403.523273 [0] environmen: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [drivers_controller-1] 1660010403.523575 [0] drivers_co: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [localization_controller-6] 1660010403.527340 [0] localizati: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.527436 [0] lifecycle_: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [v2x_controller-9] 1660010403.544671 [0] v2x_contro: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.550275599 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.566883 [0] robot_stat: using network interface wlx9cefd5fa2e35 (udp/172.31.116.40) selected arbitrarily from: wlx9cefd5fa2e35, docker0
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Parsing robot urdf xml string.
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link host_vehicle had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link novatel_gnss had 1 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link ned_heading had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link novatel_imu had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link vehicle_front had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link velodyne had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link mobileye had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fc had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fl had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_fr had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_rl had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] Link radar_rr had 0 children
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588208380 | INFO | setupURDF:186 | got segment base_link
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588303234 | INFO | setupURDF:186 | got segment host_vehicle
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588318765 | INFO | setupURDF:186 | got segment mobileye
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588326113 | INFO | setupURDF:186 | got segment ned_heading
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588333246 | INFO | setupURDF:186 | got segment novatel_gnss
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588340376 | INFO | setupURDF:186 | got segment novatel_imu
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588347301 | INFO | setupURDF:186 | got segment radar_fc
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588356089 | INFO | setupURDF:186 | got segment radar_fl
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588368382 | INFO | setupURDF:186 | got segment radar_fr
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588377848 | INFO | setupURDF:186 | got segment radar_rl
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588384897 | INFO | setupURDF:186 | got segment radar_rr
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588391655 | INFO | setupURDF:186 | got segment vehicle_front
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010403.588398728 | INFO | setupURDF:186 | got segment velodyne
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.648482394 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/carma_wm_ctrl/lib/libcarma_wm_ctrl_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.654536452 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/gnss_to_map_convertor/lib/libgnss_to_map_convertor_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.676548275 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<gnss_to_map_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.676602513 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<gnss_to_map_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.676652783 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.689653274 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<carma_wm_ctrl::WMBroadcasterNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.689700009 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<carma_wm_ctrl::WMBroadcasterNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.689791496 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010403.691596259 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.695280046 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/mobilitypath_publisher/lib/libmobilitypath_publisher_lib.so
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/localization/gnss_to_map_convertor' in container '/localization/gnss_to_map_convertor_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.706966787 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/carma_wm_broadcaster' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.710845273 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/object_detection_tracking/lib/libobject_detection_tracking_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.713212817 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<mobilitypath_publisher::MobilityPathPublication>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.713250394 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<mobilitypath_publisher::MobilityPathPublication>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.713282893 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.716772904 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<object::ObjectDetectionTrackingNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.716809697 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<object::ObjectDetectionTrackingNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.716846143 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.728046679 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/mobilitypath_publisher_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.728361970 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.732690577 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/bsm_generator/lib/libbsm_generator_node_lib.so
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/external_object' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.736217673 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/object_visualizer/lib/libobject_visualizer_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.737104305 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<object_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.737134772 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<object_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.737153457 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.737345842 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<bsm_generator::BSMGenerator>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.737389308 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<bsm_generator::BSMGenerator>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.737476233 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.749218506 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.749950775 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/object_visualizer_node' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/bsm_generator_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.754811632 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/motion_computation/lib/libmotion_computation_node_lib.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.755528631 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/cpp_message/lib/libcpp_message_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.756889816 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<motion_computation::MotionComputationNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.756919423 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_computation::MotionComputationNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.756940525 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.761320772 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<cpp_message::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.761358990 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<cpp_message::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.761380349 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.768364546 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/motion_computation_node' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.774003675 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/motion_prediction_visualizer/lib/libmotion_prediction_visualizer_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.775423785 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<motion_prediction_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.775467274 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<motion_prediction_visualizer::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.775495127 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.780206884 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/cpp_message_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.784660706 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/j2735_convertor/lib/libj2735_convertor_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.788794060 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<j2735_convertor::Node>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.788854407 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<j2735_convertor::Node>
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.788886332 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/motion_prediction_visualizer' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.789992414 | INFO | on_load_node:223 | Got request to load node: lidar_to_map_frame_transformer but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.791553291 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.793019697 | INFO | on_load_node:223 | Got request to load node: points_map_filter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/message/j2735_convertor_node' in container '/message/carma_v2x_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.797324408 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/roadway_objects/lib/libroadway_objects_node.so
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.797390575 | INFO | on_load_node:223 | Got request to load node: lidar_frame_transformer but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.798755663 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<roadway_objects::RoadwayObjectsNode>
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '' in container '/environment/perception_points_filter_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.798790172 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<roadway_objects::RoadwayObjectsNode>
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/roadway_objects_node' in container '/environment/external_objects_container'
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.798863401 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.800488108 | INFO | on_load_node:223 | Got request to load node: ray_ground_filter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010403.801403464 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.804236136 | INFO | on_load_node:223 | Got request to load node: euclidean_cluster but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.806390367 | INFO | on_load_node:223 | Got request to load node: bounding_box_converter but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010403.809359995 | INFO | on_load_node:223 | Got request to load node: tracking_nodes_node but we are not in the active state, caching for later lifecycle based activation.
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.809845534 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.812997659 | INFO | create_component_factory:118 | Load Library: /opt/carma/install_ros2/traffic_incident_parser/lib/libtraffic_incident_parser_node.so
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.814251144 | INFO | create_component_factory:131 | Found class: rclcpp_components::NodeFactoryTemplate<traffic_incident_parser::TrafficIncidentParserNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.814275898 | INFO | create_component_factory:133 | Instantiate class: rclcpp_components::NodeFactoryTemplate<traffic_incident_parser::TrafficIncidentParserNode>
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.814322527 | INFO | create_node_options:176 | Found log-level argument: WARN
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010403.823803701 | INFO | CarmaLifecycleNode:54 | CarmaLifecycleNode node launched, waiting on state transition requests
+[36;1mplatform_ros2              |[0m [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/environment/traffic_incident_parser_node' in container '/environment/external_objects_container'
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010403.919417065 | WARN | getPacket:193 | Velodyne poll() timeout
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: sending signal 'SIGINT' to process[carma_component_container_mt-2]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: sending signal 'SIGINT' to process[driver_shutdown_ros2_node_exec-1]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010403.987853792 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[32mcarma-novatel-oem7-driver-wrapper |[0m [carma_component_container_mt-2] 1660010403.993390900 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [carma_component_container_mt-2]: process has finished cleanly [pid 68]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [driver_shutdown_ros2_node_exec-1]: process has finished cleanly [pid 66]
+[32mcarma-novatel-oem7-driver-wrapper |[0m [INFO] [launch]: process[driver_shutdown_ros2_node_exec-1] was required: shutting down launched system
+[32mcarma-novatel-oem7-driver-wrapper |[0m Task exception was never retrieved
+[32mcarma-novatel-oem7-driver-wrapper |[0m future: <Task finished name='Task-25' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[32mcarma-novatel-oem7-driver-wrapper |[0m Traceback (most recent call last):
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     await self.__process_event(next_event)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[32mcarma-novatel-oem7-driver-wrapper |[0m     entities = event_handler.handle(event, self.__context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[32mcarma-novatel-oem7-driver-wrapper |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[32mcarma-novatel-oem7-driver-wrapper |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[32mcarma-novatel-oem7-driver-wrapper |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[32mcarma-novatel-oem7-driver-wrapper |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[32mcarma-novatel-oem7-driver-wrapper |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[32mcarma-novatel-oem7-driver-wrapper exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010404.920589313 | WARN | getPacket:193 | Velodyne poll() timeout
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: sending signal 'SIGINT' to process[v2x_controller-9]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: sending signal 'SIGINT' to process[carma_component_container_mt-8]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: sending signal 'SIGINT' to process[carma_component_container_mt-7]
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: sending signal 'SIGINT' to process[localization_controller-6]
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: sending signal 'SIGINT' to process[environment_perception_controller-5]
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-4]: sending signal 'SIGINT' to process[carma_component_container_mt-4]
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: sending signal 'SIGINT' to process[lifecycle_component_wrapper_mt-3]
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: sending signal 'SIGINT' to process[drivers_controller-1]
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010405.049213170 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010405.050458342 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.055086213 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010405.055101509 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010405.056801612 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [robot_state_publisher-2] 1660010405.058558621 | INFO | signal_handler:202 | signal_handler(signal_value=2)
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-7] 1660010405.061225007 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.064529258 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [lifecycle_component_wrapper_mt-3] 1660010405.064577063 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010405.074943533 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.089195394 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010405.100349247 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.115285055 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-8] 1660010405.123576826 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.141499498 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.165804504 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.193176966 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [carma_component_container_mt-4] 1660010405.219156535 | INFO | ~CarmaLifecycleNode:63 | Destroying
+[36;1mplatform_ros2              |[0m [INFO] [v2x_controller-9]: process has finished cleanly [pid 116]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[v2x_controller-9] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-7]: process has finished cleanly [pid 112]
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-140' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-8]: process has finished cleanly [pid 114]
+[36;1mplatform_ros2              |[0m [INFO] [localization_controller-6]: process has finished cleanly [pid 110]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[localization_controller-6] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-144' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [environment_perception_controller-5]: process has finished cleanly [pid 108]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[environment_perception_controller-5] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-146' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [lifecycle_component_wrapper_mt-3]: process has finished cleanly [pid 104]
+[36;1mplatform_ros2              |[0m [INFO] [drivers_controller-1]: process has finished cleanly [pid 100]
+[36;1mplatform_ros2              |[0m [INFO] [launch]: process[drivers_controller-1] was required: shutting down launched system
+[36;1mplatform_ros2              |[0m Task exception was never retrieved
+[36;1mplatform_ros2              |[0m future: <Task finished name='Task-149' coro=<LaunchService._process_one_event() done, defined at /opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py:226> exception=RuntimeError('Cannot shutdown a ROS adapter that is not running')>
+[36;1mplatform_ros2              |[0m Traceback (most recent call last):
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 228, in _process_one_event
+[36;1mplatform_ros2              |[0m     await self.__process_event(next_event)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/launch_service.py", line 237, in __process_event
+[36;1mplatform_ros2              |[0m     entities = event_handler.handle(event, self.__context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch/event_handlers/on_shutdown.py", line 58, in handle
+[36;1mplatform_ros2              |[0m     return self.__on_shutdown(cast(Shutdown, event), context)
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 122, in <lambda>
+[36;1mplatform_ros2              |[0m     on_shutdown=lambda *args, **kwargs: ros_adapter.shutdown()
+[36;1mplatform_ros2              |[0m   File "/opt/ros/foxy/lib/python3.8/site-packages/launch_ros/ros_adapters.py", line 86, in shutdown
+[36;1mplatform_ros2              |[0m     raise RuntimeError('Cannot shutdown a ROS adapter that is not running')
+[36;1mplatform_ros2              |[0m RuntimeError: Cannot shutdown a ROS adapter that is not running
+[36;1mplatform_ros2              |[0m [INFO] [carma_component_container_mt-4]: process has finished cleanly [pid 106]
+[36;1mplatform_ros2              |[0m [INFO] [robot_state_publisher-2]: process has finished cleanly [pid 102]
+[36;1mplatform_ros2 exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010405.921813413 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010406.922910484 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010407.924054305 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010408.924933015 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010409.926154171 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010410.927305470 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010411.928548019 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010412.928926730 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010413.930117513 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010414.931381320 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010415.932602181 | WARN | getPacket:193 | Velodyne poll() timeout
+[33;1mros1_bridge                |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[33;1mros1_bridge                |[0m ERROR: Unable to communicate with master!
+[35mlightbar-driver            |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[33;1mros1_bridge exited with code 1
+[0m[33mcarma-mock-camera-driver   |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010416.932878326 | WARN | getPacket:193 | Velodyne poll() timeout
+[35;1mssc_controller_driver      |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34mplatform                   |[0m wait-for-it.sh: timeout occurred after waiting 15 seconds for localhost:11311
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010417.934012399 | WARN | getPacket:193 | Velodyne poll() timeout
+[35;1mssc_controller_driver      |[0m xacro: in-order processing became default in ROS Melodic. You can drop the option.
+[34mplatform                   |[0m WARNING: Could not change permissions for folder [/opt/carma/logs/041d592a-1787-11ed-a091-9cefd5fa2e35], make sure that the parent folder has correct permissions.
+[34mplatform                   |[0m Resource not found: trajectory_visualizer
+[34mplatform                   |[0m ROS path [0]=/opt/ros/noetic/share/ros
+[34mplatform                   |[0m ROS path [1]=/opt/carma/install/yield_plugin/share
+[34mplatform                   |[0m ROS path [2]=/opt/carma/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [3]=/opt/carma/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [4]=/opt/carma/install/truck_inspection_client/share
+[34mplatform                   |[0m ROS path [5]=/opt/carma/install/stop_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [6]=/opt/carma/install/stop_and_wait_plugin/share
+[34mplatform                   |[0m ROS path [7]=/opt/carma/install/pure_pursuit_wrapper/share
+[34mplatform                   |[0m ROS path [8]=/opt/carma/install/platooning_tactical_plugin/share
+[34mplatform                   |[0m ROS path [9]=/opt/carma/install/light_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [10]=/opt/carma/install/intersection_transit_maneuvering/share
+[34mplatform                   |[0m ROS path [11]=/opt/carma/install/cooperative_lanechange/share
+[34mplatform                   |[0m ROS path [12]=/opt/carma/install/basic_autonomy/share
+[34mplatform                   |[0m ROS path [13]=/opt/carma/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [14]=/opt/carma/install/traffic_incident/share
+[34mplatform                   |[0m ROS path [15]=/opt/carma/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [16]=/opt/carma/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [17]=/opt/carma/install/sigpack/share
+[34mplatform                   |[0m ROS path [18]=/opt/carma/install/sci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [19]=/opt/carma/install/route_following_plugin/share
+[34mplatform                   |[0m ROS path [20]=/opt/carma/install/rosbag_mock_drivers/share
+[34mplatform                   |[0m ROS path [21]=/opt/carma/install/derived_object_msgs/share
+[34mplatform                   |[0m ROS path [22]=/opt/carma/install/radar_msgs/share
+[34mplatform                   |[0m ROS path [23]=/opt/carma/install/platoon_strategic_ihp/share
+[34mplatform                   |[0m ROS path [24]=/opt/carma/install/platoon_strategic/share
+[34mplatform                   |[0m ROS path [25]=/opt/carma/install/platoon_control_ihp/share
+[34mplatform                   |[0m ROS path [26]=/opt/carma/install/platoon_control/share
+[34mplatform                   |[0m ROS path [27]=/opt/carma/install/pacmod_msgs/share
+[34mplatform                   |[0m ROS path [28]=/opt/carma/install/ns-3_adapter/share
+[34mplatform                   |[0m ROS path [29]=/opt/carma/install/neobotix_usboard_msgs/share
+[34mplatform                   |[0m ROS path [30]=/opt/carma/install/mpc_follower_wrapper/share
+[34mplatform                   |[0m ROS path [31]=/opt/carma/install/mock_lightbar_driver/share
+[34mplatform                   |[0m ROS path [32]=/opt/carma/install/mobileye_560_660_msgs/share
+[34mplatform                   |[0m ROS path [33]=/opt/carma/install/localization_manager/share
+[34mplatform                   |[0m ROS path [34]=/opt/carma/install/lightbar_manager/share
+[34mplatform                   |[0m ROS path [35]=/opt/carma/install/lci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [36]=/opt/carma/install/kartech_linear_actuator_msgs/share
+[34mplatform                   |[0m ROS path [37]=/opt/carma/install/health_monitor/share
+[34mplatform                   |[0m ROS path [38]=/opt/carma/install/guidance_plugin_validator/share
+[34mplatform                   |[0m ROS path [39]=/opt/carma/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [40]=/opt/carma/install/cost_plugin_system/share
+[34mplatform                   |[0m ROS path [41]=/opt/carma/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [42]=/opt/carma/install/carma_wm/share
+[34mplatform                   |[0m ROS path [43]=/opt/carma/install/carma_record/share
+[34mplatform                   |[0m ROS path [44]=/opt/carma/install/carma_utils/share
+[34mplatform                   |[0m ROS path [45]=/opt/carma/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [46]=/opt/carma/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [47]=/opt/carma/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [48]=/opt/carma/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [49]=/opt/carma/install/delphi_srr_msgs/share
+[34mplatform                   |[0m ROS path [50]=/opt/carma/install/delphi_mrr_msgs/share
+[34mplatform                   |[0m ROS path [51]=/opt/carma/install/delphi_esr_msgs/share
+[34mplatform                   |[0m ROS path [52]=/opt/carma/install/carma/share
+[34mplatform                   |[0m ROS path [53]=/opt/carma/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [54]=/opt/carma/install/carma-messenger/share
+[34mplatform                   |[0m ROS path [55]=/opt/carma/install/can_msgs/share
+[34mplatform                   |[0m ROS path [56]=/opt/carma/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [57]=/opt/carma/install/asn1c/share
+[34mplatform                   |[0m ROS path [58]=/opt/autoware.ai/ros/install/lanelet2/share
+[34mplatform                   |[0m ROS path [59]=/opt/autoware.ai/ros/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [60]=/opt/autoware.ai/ros/install/waypoint_planner/share
+[34mplatform                   |[0m ROS path [61]=/opt/autoware.ai/ros/install/waypoint_maker/share
+[34mplatform                   |[0m ROS path [62]=/opt/autoware.ai/ros/install/vision_darknet_detect/share
+[34mplatform                   |[0m ROS path [63]=/opt/autoware.ai/ros/install/vision_beyond_track/share
+[34mplatform                   |[0m ROS path [64]=/opt/autoware.ai/ros/install/vehicle_sim_model/share
+[34mplatform                   |[0m ROS path [65]=/opt/autoware.ai/ros/install/lidar_euclidean_cluster_detect/share
+[34mplatform                   |[0m ROS path [66]=/opt/autoware.ai/ros/install/vector_map_server/share
+[34mplatform                   |[0m ROS path [67]=/opt/autoware.ai/ros/install/naive_motion_predict/share
+[34mplatform                   |[0m ROS path [68]=/opt/autoware.ai/ros/install/map_file/share
+[34mplatform                   |[0m ROS path [69]=/opt/autoware.ai/ros/install/lane_planner_ros1/share
+[34mplatform                   |[0m ROS path [70]=/opt/autoware.ai/ros/install/imm_ukf_pda_track/share
+[34mplatform                   |[0m ROS path [71]=/opt/autoware.ai/ros/install/vector_map/share
+[34mplatform                   |[0m ROS path [72]=/opt/autoware.ai/ros/install/vector_map_msgs/share
+[34mplatform                   |[0m ROS path [73]=/opt/autoware.ai/ros/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [74]=/opt/autoware.ai/ros/install/twist_gate/share
+[34mplatform                   |[0m ROS path [75]=/opt/autoware.ai/ros/install/twist_filter/share
+[34mplatform                   |[0m ROS path [76]=/opt/autoware.ai/ros/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [77]=/opt/autoware.ai/ros/install/runtime_manager/share
+[34mplatform                   |[0m ROS path [78]=/opt/autoware.ai/ros/install/tablet_socket_msgs/share
+[34mplatform                   |[0m ROS path [79]=/opt/autoware.ai/ros/install/system_monitor/share
+[34mplatform                   |[0m ROS path [80]=/opt/autoware.ai/ros/install/speech_recognition_msgs/share
+[34mplatform                   |[0m ROS path [81]=/opt/autoware.ai/ros/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [82]=/opt/autoware.ai/ros/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [83]=/opt/autoware.ai/ros/install/sigpack/share
+[34mplatform                   |[0m ROS path [84]=/opt/autoware.ai/ros/install/pure_pursuit_ros1/share
+[34mplatform                   |[0m ROS path [85]=/opt/autoware.ai/ros/install/points_preprocessor/share
+[34mplatform                   |[0m ROS path [86]=/opt/autoware.ai/ros/install/lidar_localizer/share
+[34mplatform                   |[0m ROS path [87]=/opt/autoware.ai/ros/install/autoware_health_checker/share
+[34mplatform                   |[0m ROS path [88]=/opt/autoware.ai/ros/install/as/share
+[34mplatform                   |[0m ROS path [89]=/opt/autoware.ai/ros/install/ros_observer/share
+[34mplatform                   |[0m ROS path [90]=/opt/autoware.ai/ros/install/range_vision_fusion/share
+[34mplatform                   |[0m ROS path [91]=/opt/autoware.ai/ros/install/posedetection_msgs/share
+[34mplatform                   |[0m ROS path [92]=/opt/autoware.ai/ros/install/points_downsampler/share
+[34mplatform                   |[0m ROS path [93]=/opt/autoware.ai/ros/install/pcl_omp_registration/share
+[34mplatform                   |[0m ROS path [94]=/opt/autoware.ai/ros/install/ndt_tku/share
+[34mplatform                   |[0m ROS path [95]=/opt/autoware.ai/ros/install/ndt_gpu/share
+[34mplatform                   |[0m ROS path [96]=/opt/autoware.ai/ros/install/ndt_cpu/share
+[34mplatform                   |[0m ROS path [97]=/opt/autoware.ai/ros/install/multi_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [98]=/opt/autoware.ai/ros/install/ll2_global_planner/share
+[34mplatform                   |[0m ROS path [99]=/opt/autoware.ai/ros/install/autoware_lanelet2_ros_interface/share
+[34mplatform                   |[0m ROS path [100]=/opt/autoware.ai/ros/install/lanelet2_extension/share
+[34mplatform                   |[0m ROS path [101]=/opt/autoware.ai/ros/install/lanelet2_validation/share
+[34mplatform                   |[0m ROS path [102]=/opt/autoware.ai/ros/install/lanelet2_examples/share
+[34mplatform                   |[0m ROS path [103]=/opt/autoware.ai/ros/install/lanelet2_python/share
+[34mplatform                   |[0m ROS path [104]=/opt/autoware.ai/ros/install/lanelet2_routing/share
+[34mplatform                   |[0m ROS path [105]=/opt/autoware.ai/ros/install/lanelet2_matching/share
+[34mplatform                   |[0m ROS path [106]=/opt/autoware.ai/ros/install/lanelet2_traffic_rules/share
+[34mplatform                   |[0m ROS path [107]=/opt/autoware.ai/ros/install/lanelet2_projection/share
+[34mplatform                   |[0m ROS path [108]=/opt/autoware.ai/ros/install/lanelet2_maps/share
+[34mplatform                   |[0m ROS path [109]=/opt/autoware.ai/ros/install/lanelet2_io/share
+[34mplatform                   |[0m ROS path [110]=/opt/autoware.ai/ros/install/lanelet2_core/share
+[34mplatform                   |[0m ROS path [111]=/opt/autoware.ai/ros/install/mrt_cmake_modules/share
+[34mplatform                   |[0m ROS path [112]=/opt/autoware.ai/ros/install/map_tools/share
+[34mplatform                   |[0m ROS path [113]=/opt/autoware.ai/ros/install/libwaypoint_follower/share
+[34mplatform                   |[0m ROS path [114]=/opt/autoware.ai/ros/install/ekf_localizer/share
+[34mplatform                   |[0m ROS path [115]=/opt/autoware.ai/ros/install/detected_objects_visualizer/share
+[34mplatform                   |[0m ROS path [116]=/opt/autoware.ai/ros/install/calibration_publisher/share
+[34mplatform                   |[0m ROS path [117]=/opt/autoware.ai/ros/install/autoware_camera_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [118]=/opt/autoware.ai/ros/install/astar_search/share
+[34mplatform                   |[0m ROS path [119]=/opt/autoware.ai/ros/install/amathutils_lib/share
+[34mplatform                   |[0m ROS path [120]=/opt/autoware.ai/ros/install/autoware_msgs/share
+[34mplatform                   |[0m ROS path [121]=/opt/autoware.ai/ros/install/jsk_recognition_msgs/share
+[34mplatform                   |[0m ROS path [122]=/opt/autoware.ai/ros/install/jsk_hark_msgs/share
+[34mplatform                   |[0m ROS path [123]=/opt/autoware.ai/ros/install/jsk_gui_msgs/share
+[34mplatform                   |[0m ROS path [124]=/opt/autoware.ai/ros/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [125]=/opt/autoware.ai/ros/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [126]=/opt/autoware.ai/ros/install/carma_utils/share
+[34mplatform                   |[0m ROS path [127]=/opt/autoware.ai/ros/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [128]=/opt/autoware.ai/ros/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [129]=/opt/autoware.ai/ros/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [130]=/opt/autoware.ai/ros/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [131]=/opt/autoware.ai/ros/install/hardcoded_params/share
+[34mplatform                   |[0m ROS path [132]=/opt/autoware.ai/ros/install/gnss/share
+[34mplatform                   |[0m ROS path [133]=/opt/autoware.ai/ros/install/deadreckoner/share
+[34mplatform                   |[0m ROS path [134]=/opt/autoware.ai/ros/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [135]=/opt/autoware.ai/ros/install/can_msgs/share
+[34mplatform                   |[0m ROS path [136]=/opt/autoware.ai/ros/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [137]=/opt/autoware.ai/ros/install/autoware_system_msgs/share
+[34mplatform                   |[0m ROS path [138]=/opt/autoware.ai/ros/install/autoware_map_msgs/share
+[34mplatform                   |[0m ROS path [139]=/opt/autoware.ai/ros/install/autoware_lanelet2_msgs/share
+[34mplatform                   |[0m ROS path [140]=/opt/autoware.ai/ros/install/autoware_config_msgs/share
+[34mplatform                   |[0m ROS path [141]=/opt/autoware.ai/ros/install/autoware_can_msgs/share
+[34mplatform                   |[0m ROS path [142]=/opt/autoware.ai/ros/install/autoware_build_flags/share
+[34mplatform                   |[0m ROS path [143]=/opt/ros/noetic/share
+[34mplatform                   |[0m [31mResource not found: trajectory_visualizer
+[34mplatform                   |[0m ROS path [0]=/opt/ros/noetic/share/ros
+[34mplatform                   |[0m ROS path [1]=/opt/carma/install/yield_plugin/share
+[34mplatform                   |[0m ROS path [2]=/opt/carma/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [3]=/opt/carma/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [4]=/opt/carma/install/truck_inspection_client/share
+[34mplatform                   |[0m ROS path [5]=/opt/carma/install/stop_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [6]=/opt/carma/install/stop_and_wait_plugin/share
+[34mplatform                   |[0m ROS path [7]=/opt/carma/install/pure_pursuit_wrapper/share
+[34mplatform                   |[0m ROS path [8]=/opt/carma/install/platooning_tactical_plugin/share
+[34mplatform                   |[0m ROS path [9]=/opt/carma/install/light_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [10]=/opt/carma/install/intersection_transit_maneuvering/share
+[34mplatform                   |[0m ROS path [11]=/opt/carma/install/cooperative_lanechange/share
+[34mplatform                   |[0m ROS path [12]=/opt/carma/install/basic_autonomy/share
+[34mplatform                   |[0m ROS path [13]=/opt/carma/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [14]=/opt/carma/install/traffic_incident/share
+[34mplatform                   |[0m ROS path [15]=/opt/carma/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [16]=/opt/carma/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [17]=/opt/carma/install/sigpack/share
+[34mplatform                   |[0m ROS path [18]=/opt/carma/install/sci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [19]=/opt/carma/install/route_following_plugin/share
+[34mplatform                   |[0m ROS path [20]=/opt/carma/install/rosbag_mock_drivers/share
+[34mplatform                   |[0m ROS path [21]=/opt/carma/install/derived_object_msgs/share
+[34mplatform                   |[0m ROS path [22]=/opt/carma/install/radar_msgs/share
+[34mplatform                   |[0m ROS path [23]=/opt/carma/install/platoon_strategic_ihp/share
+[34mplatform                   |[0m ROS path [24]=/opt/carma/install/platoon_strategic/share
+[34mplatform                   |[0m ROS path [25]=/opt/carma/install/platoon_control_ihp/share
+[34mplatform                   |[0m ROS path [26]=/opt/carma/install/platoon_control/share
+[34mplatform                   |[0m ROS path [27]=/opt/carma/install/pacmod_msgs/share
+[34mplatform                   |[0m ROS path [28]=/opt/carma/install/ns-3_adapter/share
+[34mplatform                   |[0m ROS path [29]=/opt/carma/install/neobotix_usboard_msgs/share
+[34mplatform                   |[0m ROS path [30]=/opt/carma/install/mpc_follower_wrapper/share
+[34mplatform                   |[0m ROS path [31]=/opt/carma/install/mock_lightbar_driver/share
+[34mplatform                   |[0m ROS path [32]=/opt/carma/install/mobileye_560_660_msgs/share
+[34mplatform                   |[0m ROS path [33]=/opt/carma/install/localization_manager/share
+[34mplatform                   |[0m ROS path [34]=/opt/carma/install/lightbar_manager/share
+[34mplatform                   |[0m ROS path [35]=/opt/carma/install/lci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [36]=/opt/carma/install/kartech_linear_actuator_msgs/share
+[34mplatform                   |[0m ROS path [37]=/opt/carma/install/health_monitor/share
+[34mplatform                   |[0m ROS path [38]=/opt/carma/install/guidance_plugin_validator/share
+[34mplatform                   |[0m ROS path [39]=/opt/carma/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [40]=/opt/carma/install/cost_plugin_system/share
+[34mplatform                   |[0m ROS path [41]=/opt/carma/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [42]=/opt/carma/install/carma_wm/share
+[34mplatform                   |[0m ROS path [43]=/opt/carma/install/carma_record/share
+[34mplatform                   |[0m ROS path [44]=/opt/carma/install/carma_utils/share
+[34mplatform                   |[0m ROS path [45]=/opt/carma/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [46]=/opt/carma/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [47]=/opt/carma/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [48]=/opt/carma/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [49]=/opt/carma/install/delphi_srr_msgs/share
+[34mplatform                   |[0m ROS path [50]=/opt/carma/install/delphi_mrr_msgs/share
+[34mplatform                   |[0m ROS path [51]=/opt/carma/install/delphi_esr_msgs/share
+[34mplatform                   |[0m ROS path [52]=/opt/carma/install/carma/share
+[34mplatform                   |[0m ROS path [53]=/opt/carma/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [54]=/opt/carma/install/carma-messenger/share
+[34mplatform                   |[0m ROS path [55]=/opt/carma/install/can_msgs/share
+[34mplatform                   |[0m ROS path [56]=/opt/carma/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [57]=/opt/carma/install/asn1c/share
+[34mplatform                   |[0m ROS path [58]=/opt/autoware.ai/ros/install/lanelet2/share
+[34mplatform                   |[0m ROS path [59]=/opt/autoware.ai/ros/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [60]=/opt/autoware.ai/ros/install/waypoint_planner/share
+[34mplatform                   |[0m ROS path [61]=/opt/autoware.ai/ros/install/waypoint_maker/share
+[34mplatform                   |[0m ROS path [62]=/opt/autoware.ai/ros/install/vision_darknet_detect/share
+[34mplatform                   |[0m ROS path [63]=/opt/autoware.ai/ros/install/vision_beyond_track/share
+[34mplatform                   |[0m ROS path [64]=/opt/autoware.ai/ros/install/vehicle_sim_model/share
+[34mplatform                   |[0m ROS path [65]=/opt/autoware.ai/ros/install/lidar_euclidean_cluster_detect/share
+[34mplatform                   |[0m ROS path [66]=/opt/autoware.ai/ros/install/vector_map_server/share
+[34mplatform                   |[0m ROS path [67]=/opt/autoware.ai/ros/install/naive_motion_predict/share
+[34mplatform                   |[0m ROS path [68]=/opt/autoware.ai/ros/install/map_file/share
+[34mplatform                   |[0m ROS path [69]=/opt/autoware.ai/ros/install/lane_planner_ros1/share
+[34mplatform                   |[0m ROS path [70]=/opt/autoware.ai/ros/install/imm_ukf_pda_track/share
+[34mplatform                   |[0m ROS path [71]=/opt/autoware.ai/ros/install/vector_map/share
+[34mplatform                   |[0m ROS path [72]=/opt/autoware.ai/ros/install/vector_map_msgs/share
+[34mplatform                   |[0m ROS path [73]=/opt/autoware.ai/ros/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [74]=/opt/autoware.ai/ros/install/twist_gate/share
+[34mplatform                   |[0m ROS path [75]=/opt/autoware.ai/ros/install/twist_filter/share
+[34mplatform                   |[0m ROS path [76]=/opt/autoware.ai/ros/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [77]=/opt/autoware.ai/ros/install/runtime_manager/share
+[34mplatform                   |[0m ROS path [78]=/opt/autoware.ai/ros/install/tablet_socket_msgs/share
+[34mplatform                   |[0m ROS path [79]=/opt/autoware.ai/ros/install/system_monitor/share
+[34mplatform                   |[0m ROS path [80]=/opt/autoware.ai/ros/install/speech_recognition_msgs/share
+[34mplatform                   |[0m ROS path [81]=/opt/autoware.ai/ros/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [82]=/opt/autoware.ai/ros/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [83]=/opt/autoware.ai/ros/install/sigpack/share
+[34mplatform                   |[0m ROS path [84]=/opt/autoware.ai/ros/install/pure_pursuit_ros1/share
+[34mplatform                   |[0m ROS path [85]=/opt/autoware.ai/ros/install/points_preprocessor/share
+[34mplatform                   |[0m ROS path [86]=/opt/autoware.ai/ros/install/lidar_localizer/share
+[34mplatform                   |[0m ROS path [87]=/opt/autoware.ai/ros/install/autoware_health_checker/share
+[34mplatform                   |[0m ROS path [88]=/opt/autoware.ai/ros/install/as/share
+[34mplatform                   |[0m ROS path [89]=/opt/autoware.ai/ros/install/ros_observer/share
+[34mplatform                   |[0m ROS path [90]=/opt/autoware.ai/ros/install/range_vision_fusion/share
+[34mplatform                   |[0m ROS path [91]=/opt/autoware.ai/ros/install/posedetection_msgs/share
+[34mplatform                   |[0m ROS path [92]=/opt/autoware.ai/ros/install/points_downsampler/share
+[34mplatform                   |[0m ROS path [93]=/opt/autoware.ai/ros/install/pcl_omp_registration/share
+[34mplatform                   |[0m ROS path [94]=/opt/autoware.ai/ros/install/ndt_tku/share
+[34mplatform                   |[0m ROS path [95]=/opt/autoware.ai/ros/install/ndt_gpu/share
+[34mplatform                   |[0m ROS path [96]=/opt/autoware.ai/ros/install/ndt_cpu/share
+[34mplatform                   |[0m ROS path [97]=/opt/autoware.ai/ros/install/multi_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [98]=/opt/autoware.ai/ros/install/ll2_global_planner/share
+[34mplatform                   |[0m ROS path [99]=/opt/autoware.ai/ros/install/autoware_lanelet2_ros_interface/share
+[34mplatform                   |[0m ROS path [100]=/opt/autoware.ai/ros/install/lanelet2_extension/share
+[34mplatform                   |[0m ROS path [101]=/opt/autoware.ai/ros/install/lanelet2_validation/share
+[34mplatform                   |[0m ROS path [102]=/opt/autoware.ai/ros/install/lanelet2_examples/share
+[34mplatform                   |[0m ROS path [103]=/opt/autoware.ai/ros/install/lanelet2_python/share
+[34mplatform                   |[0m ROS path [104]=/opt/autoware.ai/ros/install/lanelet2_routing/share
+[34mplatform                   |[0m ROS path [105]=/opt/autoware.ai/ros/install/lanelet2_matching/share
+[34mplatform                   |[0m ROS path [106]=/opt/autoware.ai/ros/install/lanelet2_traffic_rules/share
+[34mplatform                   |[0m ROS path [107]=/opt/autoware.ai/ros/install/lanelet2_projection/share
+[34mplatform                   |[0m ROS path [108]=/opt/autoware.ai/ros/install/lanelet2_maps/share
+[34mplatform                   |[0m ROS path [109]=/opt/autoware.ai/ros/install/lanelet2_io/share
+[34mplatform                   |[0m ROS path [110]=/opt/autoware.ai/ros/install/lanelet2_core/share
+[34mplatform                   |[0m ROS path [111]=/opt/autoware.ai/ros/install/mrt_cmake_modules/share
+[34mplatform                   |[0m ROS path [112]=/opt/autoware.ai/ros/install/map_tools/share
+[34mplatform                   |[0m ROS path [113]=/opt/autoware.ai/ros/install/libwaypoint_follower/share
+[34mplatform                   |[0m ROS path [114]=/opt/autoware.ai/ros/install/ekf_localizer/share
+[34mplatform                   |[0m ROS path [115]=/opt/autoware.ai/ros/install/detected_objects_visualizer/share
+[34mplatform                   |[0m ROS path [116]=/opt/autoware.ai/ros/install/calibration_publisher/share
+[34mplatform                   |[0m ROS path [117]=/opt/autoware.ai/ros/install/autoware_camera_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [118]=/opt/autoware.ai/ros/install/astar_search/share
+[34mplatform                   |[0m ROS path [119]=/opt/autoware.ai/ros/install/amathutils_lib/share
+[34mplatform                   |[0m ROS path [120]=/opt/autoware.ai/ros/install/autoware_msgs/share
+[34mplatform                   |[0m ROS path [121]=/opt/autoware.ai/ros/install/jsk_recognition_msgs/share
+[34mplatform                   |[0m ROS path [122]=/opt/autoware.ai/ros/install/jsk_hark_msgs/share
+[34mplatform                   |[0m ROS path [123]=/opt/autoware.ai/ros/install/jsk_gui_msgs/share
+[34mplatform                   |[0m ROS path [124]=/opt/autoware.ai/ros/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [125]=/opt/autoware.ai/ros/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [126]=/opt/autoware.ai/ros/install/carma_utils/share
+[34mplatform                   |[0m ROS path [127]=/opt/autoware.ai/ros/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [128]=/opt/autoware.ai/ros/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [129]=/opt/autoware.ai/ros/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [130]=/opt/autoware.ai/ros/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [131]=/opt/autoware.ai/ros/install/hardcoded_params/share
+[34mplatform                   |[0m ROS path [132]=/opt/autoware.ai/ros/install/gnss/share
+[34mplatform                   |[0m ROS path [133]=/opt/autoware.ai/ros/install/deadreckoner/share
+[34mplatform                   |[0m ROS path [134]=/opt/autoware.ai/ros/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [135]=/opt/autoware.ai/ros/install/can_msgs/share
+[34mplatform                   |[0m ROS path [136]=/opt/autoware.ai/ros/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [137]=/opt/autoware.ai/ros/install/autoware_system_msgs/share
+[34mplatform                   |[0m ROS path [138]=/opt/autoware.ai/ros/install/autoware_map_msgs/share
+[34mplatform                   |[0m ROS path [139]=/opt/autoware.ai/ros/install/autoware_lanelet2_msgs/share
+[34mplatform                   |[0m ROS path [140]=/opt/autoware.ai/ros/install/autoware_config_msgs/share
+[34mplatform                   |[0m ROS path [141]=/opt/autoware.ai/ros/install/autoware_can_msgs/share
+[34mplatform                   |[0m ROS path [142]=/opt/autoware.ai/ros/install/autoware_build_flags/share
+[34mplatform                   |[0m ROS path [143]=/opt/ros/noetic/share[0m
+[34mplatform                   |[0m The traceback for the exception was written to the log file
+[34mplatform                   |[0m [31mThe traceback for the exception was written to the log file[0m
+[34mplatform                   |[0m Traceback (most recent call last):
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+[34mplatform                   |[0m     p.start()
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+[34mplatform                   |[0m     self._start_infrastructure()
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 254, in _start_infrastructure
+[34mplatform                   |[0m     self._load_config()
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 156, in _load_config
+[34mplatform                   |[0m     self.config = roslaunch.config.load_config_default(self.roslaunch_files, self.port,
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/config.py", line 461, in load_config_default
+[34mplatform                   |[0m     loader.load(f, config, argv=args, verbose=verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 761, in load
+[34mplatform                   |[0m     self._load_launch(launch, ros_config, is_core=core, filename=filename, argv=argv, verbose=verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 733, in _load_launch
+[34mplatform                   |[0m     self._recurse_load(ros_config, launch.childNodes, self.root_context, None, is_core, verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 699, in _recurse_load
+[34mplatform                   |[0m     val = self._include_tag(tag, context, ros_config, default_machine, is_core, verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+[34mplatform                   |[0m     return f(*args, **kwds)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 633, in _include_tag
+[34mplatform                   |[0m     self._recurse_load(ros_config, launch.childNodes, child_ns, \
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 668, in _recurse_load
+[34mplatform                   |[0m     self._recurse_load(ros_config, tag.childNodes, child_ns, \
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 699, in _recurse_load
+[34mplatform                   |[0m     val = self._include_tag(tag, context, ros_config, default_machine, is_core, verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+[34mplatform                   |[0m     return f(*args, **kwds)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 633, in _include_tag
+[34mplatform                   |[0m     self._recurse_load(ros_config, launch.childNodes, child_ns, \
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 668, in _recurse_load
+[34mplatform                   |[0m     self._recurse_load(ros_config, tag.childNodes, child_ns, \
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 699, in _recurse_load
+[34mplatform                   |[0m     val = self._include_tag(tag, context, ros_config, default_machine, is_core, verbose)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 96, in call
+[34mplatform                   |[0m     return f(*args, **kwds)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 596, in _include_tag
+[34mplatform                   |[0m     inc_filename = self.resolve_args(tag.attributes['file'].value, context)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/xmlloader.py", line 189, in resolve_args
+[34mplatform                   |[0m     return substitution_args.resolve_args(args, context=context.resolve_dict, resolve_anon=self.resolve_anon)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/substitution_args.py", line 392, in resolve_args
+[34mplatform                   |[0m     resolved = _resolve_args(resolved, context, resolve_anon, commands)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/substitution_args.py", line 405, in _resolve_args
+[34mplatform                   |[0m     resolved = commands[command](resolved, a, args, context)
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/substitution_args.py", line 164, in _find
+[34mplatform                   |[0m     res = _find_executable(
+[34mplatform                   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/substitution_args.py", line 212, in _find_executable
+[34mplatform                   |[0m     full_path = _get_executable_path(rp.get_path(args[0]), path)
+[34mplatform                   |[0m   File "/usr/lib/python3/dist-packages/rospkg/rospack.py", line 207, in get_path
+[34mplatform                   |[0m     raise ResourceNotFound(name, ros_paths=self._ros_paths)
+[34mplatform                   |[0m rospkg.common.ResourceNotFound: trajectory_visualizer
+[34mplatform                   |[0m ROS path [0]=/opt/ros/noetic/share/ros
+[34mplatform                   |[0m ROS path [1]=/opt/carma/install/yield_plugin/share
+[34mplatform                   |[0m ROS path [2]=/opt/carma/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [3]=/opt/carma/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [4]=/opt/carma/install/truck_inspection_client/share
+[34mplatform                   |[0m ROS path [5]=/opt/carma/install/stop_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [6]=/opt/carma/install/stop_and_wait_plugin/share
+[34mplatform                   |[0m ROS path [7]=/opt/carma/install/pure_pursuit_wrapper/share
+[34mplatform                   |[0m ROS path [8]=/opt/carma/install/platooning_tactical_plugin/share
+[34mplatform                   |[0m ROS path [9]=/opt/carma/install/light_controlled_intersection_tactical_plugin/share
+[34mplatform                   |[0m ROS path [10]=/opt/carma/install/intersection_transit_maneuvering/share
+[34mplatform                   |[0m ROS path [11]=/opt/carma/install/cooperative_lanechange/share
+[34mplatform                   |[0m ROS path [12]=/opt/carma/install/basic_autonomy/share
+[34mplatform                   |[0m ROS path [13]=/opt/carma/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [14]=/opt/carma/install/traffic_incident/share
+[34mplatform                   |[0m ROS path [15]=/opt/carma/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [16]=/opt/carma/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [17]=/opt/carma/install/sigpack/share
+[34mplatform                   |[0m ROS path [18]=/opt/carma/install/sci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [19]=/opt/carma/install/route_following_plugin/share
+[34mplatform                   |[0m ROS path [20]=/opt/carma/install/rosbag_mock_drivers/share
+[34mplatform                   |[0m ROS path [21]=/opt/carma/install/derived_object_msgs/share
+[34mplatform                   |[0m ROS path [22]=/opt/carma/install/radar_msgs/share
+[34mplatform                   |[0m ROS path [23]=/opt/carma/install/platoon_strategic_ihp/share
+[34mplatform                   |[0m ROS path [24]=/opt/carma/install/platoon_strategic/share
+[34mplatform                   |[0m ROS path [25]=/opt/carma/install/platoon_control_ihp/share
+[34mplatform                   |[0m ROS path [26]=/opt/carma/install/platoon_control/share
+[34mplatform                   |[0m ROS path [27]=/opt/carma/install/pacmod_msgs/share
+[34mplatform                   |[0m ROS path [28]=/opt/carma/install/ns-3_adapter/share
+[34mplatform                   |[0m ROS path [29]=/opt/carma/install/neobotix_usboard_msgs/share
+[34mplatform                   |[0m ROS path [30]=/opt/carma/install/mpc_follower_wrapper/share
+[34mplatform                   |[0m ROS path [31]=/opt/carma/install/mock_lightbar_driver/share
+[34mplatform                   |[0m ROS path [32]=/opt/carma/install/mobileye_560_660_msgs/share
+[34mplatform                   |[0m ROS path [33]=/opt/carma/install/localization_manager/share
+[34mplatform                   |[0m ROS path [34]=/opt/carma/install/lightbar_manager/share
+[34mplatform                   |[0m ROS path [35]=/opt/carma/install/lci_strategic_plugin/share
+[34mplatform                   |[0m ROS path [36]=/opt/carma/install/kartech_linear_actuator_msgs/share
+[34mplatform                   |[0m ROS path [37]=/opt/carma/install/health_monitor/share
+[34mplatform                   |[0m ROS path [38]=/opt/carma/install/guidance_plugin_validator/share
+[34mplatform                   |[0m ROS path [39]=/opt/carma/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [40]=/opt/carma/install/cost_plugin_system/share
+[34mplatform                   |[0m ROS path [41]=/opt/carma/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [42]=/opt/carma/install/carma_wm/share
+[34mplatform                   |[0m ROS path [43]=/opt/carma/install/carma_record/share
+[34mplatform                   |[0m ROS path [44]=/opt/carma/install/carma_utils/share
+[34mplatform                   |[0m ROS path [45]=/opt/carma/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [46]=/opt/carma/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [47]=/opt/carma/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [48]=/opt/carma/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [49]=/opt/carma/install/delphi_srr_msgs/share
+[34mplatform                   |[0m ROS path [50]=/opt/carma/install/delphi_mrr_msgs/share
+[34mplatform                   |[0m ROS path [51]=/opt/carma/install/delphi_esr_msgs/share
+[34mplatform                   |[0m ROS path [52]=/opt/carma/install/carma/share
+[34mplatform                   |[0m ROS path [53]=/opt/carma/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [54]=/opt/carma/install/carma-messenger/share
+[34mplatform                   |[0m ROS path [55]=/opt/carma/install/can_msgs/share
+[34mplatform                   |[0m ROS path [56]=/opt/carma/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [57]=/opt/carma/install/asn1c/share
+[34mplatform                   |[0m ROS path [58]=/opt/autoware.ai/ros/install/lanelet2/share
+[34mplatform                   |[0m ROS path [59]=/opt/autoware.ai/ros/install/wgs84_utils_ros1/share
+[34mplatform                   |[0m ROS path [60]=/opt/autoware.ai/ros/install/waypoint_planner/share
+[34mplatform                   |[0m ROS path [61]=/opt/autoware.ai/ros/install/waypoint_maker/share
+[34mplatform                   |[0m ROS path [62]=/opt/autoware.ai/ros/install/vision_darknet_detect/share
+[34mplatform                   |[0m ROS path [63]=/opt/autoware.ai/ros/install/vision_beyond_track/share
+[34mplatform                   |[0m ROS path [64]=/opt/autoware.ai/ros/install/vehicle_sim_model/share
+[34mplatform                   |[0m ROS path [65]=/opt/autoware.ai/ros/install/lidar_euclidean_cluster_detect/share
+[34mplatform                   |[0m ROS path [66]=/opt/autoware.ai/ros/install/vector_map_server/share
+[34mplatform                   |[0m ROS path [67]=/opt/autoware.ai/ros/install/naive_motion_predict/share
+[34mplatform                   |[0m ROS path [68]=/opt/autoware.ai/ros/install/map_file/share
+[34mplatform                   |[0m ROS path [69]=/opt/autoware.ai/ros/install/lane_planner_ros1/share
+[34mplatform                   |[0m ROS path [70]=/opt/autoware.ai/ros/install/imm_ukf_pda_track/share
+[34mplatform                   |[0m ROS path [71]=/opt/autoware.ai/ros/install/vector_map/share
+[34mplatform                   |[0m ROS path [72]=/opt/autoware.ai/ros/install/vector_map_msgs/share
+[34mplatform                   |[0m ROS path [73]=/opt/autoware.ai/ros/install/uncertainty_tools/share
+[34mplatform                   |[0m ROS path [74]=/opt/autoware.ai/ros/install/twist_gate/share
+[34mplatform                   |[0m ROS path [75]=/opt/autoware.ai/ros/install/twist_filter/share
+[34mplatform                   |[0m ROS path [76]=/opt/autoware.ai/ros/install/trajectory_utils/share
+[34mplatform                   |[0m ROS path [77]=/opt/autoware.ai/ros/install/runtime_manager/share
+[34mplatform                   |[0m ROS path [78]=/opt/autoware.ai/ros/install/tablet_socket_msgs/share
+[34mplatform                   |[0m ROS path [79]=/opt/autoware.ai/ros/install/system_monitor/share
+[34mplatform                   |[0m ROS path [80]=/opt/autoware.ai/ros/install/speech_recognition_msgs/share
+[34mplatform                   |[0m ROS path [81]=/opt/autoware.ai/ros/install/socketcan_bridge/share
+[34mplatform                   |[0m ROS path [82]=/opt/autoware.ai/ros/install/socketcan_interface/share
+[34mplatform                   |[0m ROS path [83]=/opt/autoware.ai/ros/install/sigpack/share
+[34mplatform                   |[0m ROS path [84]=/opt/autoware.ai/ros/install/pure_pursuit_ros1/share
+[34mplatform                   |[0m ROS path [85]=/opt/autoware.ai/ros/install/points_preprocessor/share
+[34mplatform                   |[0m ROS path [86]=/opt/autoware.ai/ros/install/lidar_localizer/share
+[34mplatform                   |[0m ROS path [87]=/opt/autoware.ai/ros/install/autoware_health_checker/share
+[34mplatform                   |[0m ROS path [88]=/opt/autoware.ai/ros/install/as/share
+[34mplatform                   |[0m ROS path [89]=/opt/autoware.ai/ros/install/ros_observer/share
+[34mplatform                   |[0m ROS path [90]=/opt/autoware.ai/ros/install/range_vision_fusion/share
+[34mplatform                   |[0m ROS path [91]=/opt/autoware.ai/ros/install/posedetection_msgs/share
+[34mplatform                   |[0m ROS path [92]=/opt/autoware.ai/ros/install/points_downsampler/share
+[34mplatform                   |[0m ROS path [93]=/opt/autoware.ai/ros/install/pcl_omp_registration/share
+[34mplatform                   |[0m ROS path [94]=/opt/autoware.ai/ros/install/ndt_tku/share
+[34mplatform                   |[0m ROS path [95]=/opt/autoware.ai/ros/install/ndt_gpu/share
+[34mplatform                   |[0m ROS path [96]=/opt/autoware.ai/ros/install/ndt_cpu/share
+[34mplatform                   |[0m ROS path [97]=/opt/autoware.ai/ros/install/multi_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [98]=/opt/autoware.ai/ros/install/ll2_global_planner/share
+[34mplatform                   |[0m ROS path [99]=/opt/autoware.ai/ros/install/autoware_lanelet2_ros_interface/share
+[34mplatform                   |[0m ROS path [100]=/opt/autoware.ai/ros/install/lanelet2_extension/share
+[34mplatform                   |[0m ROS path [101]=/opt/autoware.ai/ros/install/lanelet2_validation/share
+[34mplatform                   |[0m ROS path [102]=/opt/autoware.ai/ros/install/lanelet2_examples/share
+[34mplatform                   |[0m ROS path [103]=/opt/autoware.ai/ros/install/lanelet2_python/share
+[34mplatform                   |[0m ROS path [104]=/opt/autoware.ai/ros/install/lanelet2_routing/share
+[34mplatform                   |[0m ROS path [105]=/opt/autoware.ai/ros/install/lanelet2_matching/share
+[34mplatform                   |[0m ROS path [106]=/opt/autoware.ai/ros/install/lanelet2_traffic_rules/share
+[34mplatform                   |[0m ROS path [107]=/opt/autoware.ai/ros/install/lanelet2_projection/share
+[34mplatform                   |[0m ROS path [108]=/opt/autoware.ai/ros/install/lanelet2_maps/share
+[34mplatform                   |[0m ROS path [109]=/opt/autoware.ai/ros/install/lanelet2_io/share
+[34mplatform                   |[0m ROS path [110]=/opt/autoware.ai/ros/install/lanelet2_core/share
+[34mplatform                   |[0m ROS path [111]=/opt/autoware.ai/ros/install/mrt_cmake_modules/share
+[34mplatform                   |[0m ROS path [112]=/opt/autoware.ai/ros/install/map_tools/share
+[34mplatform                   |[0m ROS path [113]=/opt/autoware.ai/ros/install/libwaypoint_follower/share
+[34mplatform                   |[0m ROS path [114]=/opt/autoware.ai/ros/install/ekf_localizer/share
+[34mplatform                   |[0m ROS path [115]=/opt/autoware.ai/ros/install/detected_objects_visualizer/share
+[34mplatform                   |[0m ROS path [116]=/opt/autoware.ai/ros/install/calibration_publisher/share
+[34mplatform                   |[0m ROS path [117]=/opt/autoware.ai/ros/install/autoware_camera_lidar_calibrator/share
+[34mplatform                   |[0m ROS path [118]=/opt/autoware.ai/ros/install/astar_search/share
+[34mplatform                   |[0m ROS path [119]=/opt/autoware.ai/ros/install/amathutils_lib/share
+[34mplatform                   |[0m ROS path [120]=/opt/autoware.ai/ros/install/autoware_msgs/share
+[34mplatform                   |[0m ROS path [121]=/opt/autoware.ai/ros/install/jsk_recognition_msgs/share
+[34mplatform                   |[0m ROS path [122]=/opt/autoware.ai/ros/install/jsk_hark_msgs/share
+[34mplatform                   |[0m ROS path [123]=/opt/autoware.ai/ros/install/jsk_gui_msgs/share
+[34mplatform                   |[0m ROS path [124]=/opt/autoware.ai/ros/install/driver_shutdown/share
+[34mplatform                   |[0m ROS path [125]=/opt/autoware.ai/ros/install/cav_driver_utils/share
+[34mplatform                   |[0m ROS path [126]=/opt/autoware.ai/ros/install/carma_utils/share
+[34mplatform                   |[0m ROS path [127]=/opt/autoware.ai/ros/install/cav_srvs/share
+[34mplatform                   |[0m ROS path [128]=/opt/autoware.ai/ros/install/carma_debug_msgs/share
+[34mplatform                   |[0m ROS path [129]=/opt/autoware.ai/ros/install/cav_msgs/share
+[34mplatform                   |[0m ROS path [130]=/opt/autoware.ai/ros/install/j2735_msgs/share
+[34mplatform                   |[0m ROS path [131]=/opt/autoware.ai/ros/install/hardcoded_params/share
+[34mplatform                   |[0m ROS path [132]=/opt/autoware.ai/ros/install/gnss/share
+[34mplatform                   |[0m ROS path [133]=/opt/autoware.ai/ros/install/deadreckoner/share
+[34mplatform                   |[0m ROS path [134]=/opt/autoware.ai/ros/install/carma_cmake_common/share
+[34mplatform                   |[0m ROS path [135]=/opt/autoware.ai/ros/install/can_msgs/share
+[34mplatform                   |[0m ROS path [136]=/opt/autoware.ai/ros/install/bsm_helper/share
+[34mplatform                   |[0m ROS path [137]=/opt/autoware.ai/ros/install/autoware_system_msgs/share
+[34mplatform                   |[0m ROS path [138]=/opt/autoware.ai/ros/install/autoware_map_msgs/share
+[34mplatform                   |[0m ROS path [139]=/opt/autoware.ai/ros/install/autoware_lanelet2_msgs/share
+[34mplatform                   |[0m ROS path [140]=/opt/autoware.ai/ros/install/autoware_config_msgs/share
+[34mplatform                   |[0m ROS path [141]=/opt/autoware.ai/ros/install/autoware_can_msgs/share
+[34mplatform                   |[0m ROS path [142]=/opt/autoware.ai/ros/install/autoware_build_flags/share
+[34mplatform                   |[0m ROS path [143]=/opt/ros/noetic/share
+[34mplatform                   |[0m 
+[34mplatform                   |[0m Checking log directory for disk usage. This may take a while.
+[34mplatform                   |[0m Press Ctrl-C to interrupt
+[34mplatform                   |[0m Done checking log file disk usage. Usage is <1GB.
+[34mplatform                   |[0m ]2;/opt/carma/vehicle/config/carma_docker.launch
+[34mplatform exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010418.935132211 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010419.936247989 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010420.937406379 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010421.938505147 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010422.939741629 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010423.940900906 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010424.941731713 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010425.942832304 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010426.943190361 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010427.944328546 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010428.944940358 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010429.946326869 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010430.947461671 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010431.948735590 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010432.948970187 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010433.950189975 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010434.950559256 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010435.951264063 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010436.952278606 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010437.952873925 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010438.953206101 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010439.954320735 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010440.955469294 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010441.956623454 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010442.957788606 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010443.959019578 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010444.960217145 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010445.961476422 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010446.962680578 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010447.963799157 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010448.964936662 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010449.966208775 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010450.967504751 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010451.968616455 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010452.968884827 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010453.970034179 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010454.971105038 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010455.972240159 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010456.972891358 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010457.974075401 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010458.975354199 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010459.976648452 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010460.976895304 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010461.978055195 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010462.979233371 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010463.980382714 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010464.980928669 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010465.982279540 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010466.983550750 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010467.984695368 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010468.984929526 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010469.986224474 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010470.987389185 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010471.988567916 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010472.988889100 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010473.990050827 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010474.991196187 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010475.991585614 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010476.992747376 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010477.993915219 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010478.995189696 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010479.996452431 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010480.996903626 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010481.998125935 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010482.999394647 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010484.000655219 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010485.001940164 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010486.003093509 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010487.004204150 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010488.004929807 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010489.006215602 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010490.007417414 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010491.008567327 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010492.008833465 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010493.009929745 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010494.011020296 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010495.012105701 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010496.012830730 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010497.013972746 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010498.015060338 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010499.015471571 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010500.016610004 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010501.016867434 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010502.018010357 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010503.019095903 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010504.020241969 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010505.020830255 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010506.021969035 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010507.023102104 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010508.024265995 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010509.024827853 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010510.025792535 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010511.026877116 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010512.028021884 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010513.028947722 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010514.030032664 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010515.031231492 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010516.032564015 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010517.033720301 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010518.034923791 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010519.036090094 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010520.036910424 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010521.038126276 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010522.039197622 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010523.040354101 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010524.041160606 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010525.042354140 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010526.043600993 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010527.044791044 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010528.045951109 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010529.047189703 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010530.048343555 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010531.049526825 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010532.050736856 | WARN | getPacket:193 | Velodyne poll() timeout
+[32;1mroscore                    |[0m WARNING: Could not change permissions for folder [/opt/carma/logs/fa9b7fda-1786-11ed-96ce-9cefd5fa2e35], make sure that the parent folder has correct permissions.
+[32;1mroscore                    |[0m RLException: Unable to contact my own server at [http://192.168.88.10:46583/].
+[32;1mroscore                    |[0m This usually means that the network is not configured properly.
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m A common cause is that the machine cannot connect to itself.  Please check
+[32;1mroscore                    |[0m for errors by running:
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	ping 192.168.88.10
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m For more tips, please see
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m [31mRLException: Unable to contact my own server at [http://192.168.88.10:46583/].
+[32;1mroscore                    |[0m This usually means that the network is not configured properly.
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m A common cause is that the machine cannot connect to itself.  Please check
+[32;1mroscore                    |[0m for errors by running:
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	ping 192.168.88.10
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m For more tips, please see
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[32;1mroscore                    |[0m [0m
+[32;1mroscore                    |[0m The traceback for the exception was written to the log file
+[32;1mroscore                    |[0m [31mThe traceback for the exception was written to the log file[0m
+[32;1mroscore                    |[0m Traceback (most recent call last):
+[32;1mroscore                    |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+[32;1mroscore                    |[0m     p.start()
+[32;1mroscore                    |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+[32;1mroscore                    |[0m     self._start_infrastructure()
+[32;1mroscore                    |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 263, in _start_infrastructure
+[32;1mroscore                    |[0m     self._start_server()
+[32;1mroscore                    |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 212, in _start_server
+[32;1mroscore                    |[0m     self.server.start()
+[32;1mroscore                    |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/server.py", line 404, in start
+[32;1mroscore                    |[0m     raise RLException("""Unable to contact my own server at [%s].
+[32;1mroscore                    |[0m roslaunch.core.RLException: Unable to contact my own server at [http://192.168.88.10:46583/].
+[32;1mroscore                    |[0m This usually means that the network is not configured properly.
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m A common cause is that the machine cannot connect to itself.  Please check
+[32;1mroscore                    |[0m for errors by running:
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	ping 192.168.88.10
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m For more tips, please see
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m 
+[32;1mroscore                    |[0m Checking log directory for disk usage. This may take a while.
+[32;1mroscore                    |[0m Press Ctrl-C to interrupt
+[32;1mroscore                    |[0m Done checking log file disk usage. Usage is <1GB.
+[32;1mroscore                    |[0m ]2;roscore
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010533.051810858 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010534.052861005 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010535.054175078 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010536.055431512 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010537.056610835 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010538.056870066 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010539.057983003 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010540.059273697 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010541.060427503 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010542.060979037 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010543.062151696 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010544.063309342 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010545.064452064 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010546.064869565 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010547.065747181 | WARN | getPacket:193 | Velodyne poll() timeout
+[35mlightbar-driver            |[0m WARNING: Could not change permissions for folder [/opt/carma/logs/03914e94-1787-11ed-bc54-9cefd5fa2e35], make sure that the parent folder has correct permissions.
+[35mlightbar-driver            |[0m RLException: Unable to contact my own server at [http://192.168.88.10:46849/].
+[35mlightbar-driver            |[0m This usually means that the network is not configured properly.
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35mlightbar-driver            |[0m for errors by running:
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	ping 192.168.88.10
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m For more tips, please see
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m [31mRLException: Unable to contact my own server at [http://192.168.88.10:46849/].
+[35mlightbar-driver            |[0m This usually means that the network is not configured properly.
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35mlightbar-driver            |[0m for errors by running:
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	ping 192.168.88.10
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m For more tips, please see
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35mlightbar-driver            |[0m [0m
+[35mlightbar-driver            |[0m The traceback for the exception was written to the log file
+[35mlightbar-driver            |[0m Checking log directory for disk usage. This may take a while.
+[35mlightbar-driver            |[0m Press Ctrl-C to interrupt
+[35mlightbar-driver            |[0m Done checking log file disk usage. Usage is <1GB.
+[35mlightbar-driver            |[0m ]2;/opt/carma/vehicle/config/drivers.launch
+[35mlightbar-driver            |[0m [31mThe traceback for the exception was written to the log file[0m
+[35mlightbar-driver            |[0m Traceback (most recent call last):
+[35mlightbar-driver            |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+[35mlightbar-driver            |[0m     p.start()
+[35mlightbar-driver            |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+[35mlightbar-driver            |[0m     self._start_infrastructure()
+[35mlightbar-driver            |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 263, in _start_infrastructure
+[35mlightbar-driver            |[0m     self._start_server()
+[35mlightbar-driver            |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 212, in _start_server
+[35mlightbar-driver            |[0m     self.server.start()
+[35mlightbar-driver            |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/server.py", line 404, in start
+[35mlightbar-driver            |[0m     raise RLException("""Unable to contact my own server at [%s].
+[35mlightbar-driver            |[0m roslaunch.core.RLException: Unable to contact my own server at [http://192.168.88.10:46849/].
+[35mlightbar-driver            |[0m This usually means that the network is not configured properly.
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35mlightbar-driver            |[0m for errors by running:
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	ping 192.168.88.10
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m For more tips, please see
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver            |[0m 
+[35mlightbar-driver exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010548.066904931 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010549.068053710 | WARN | getPacket:193 | Velodyne poll() timeout
+[35;1mssc_controller_driver      |[0m WARNING: Could not change permissions for folder [/opt/carma/logs/03fc2174-1787-11ed-abc3-9cefd5fa2e35], make sure that the parent folder has correct permissions.
+[35;1mssc_controller_driver      |[0m RLException: Unable to contact my own server at [http://192.168.88.10:46501/].
+[35;1mssc_controller_driver      |[0m This usually means that the network is not configured properly.
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35;1mssc_controller_driver      |[0m for errors by running:
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	ping 192.168.88.10
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m For more tips, please see
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m [31mRLException: Unable to contact my own server at [http://192.168.88.10:46501/].
+[35;1mssc_controller_driver      |[0m This usually means that the network is not configured properly.
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35;1mssc_controller_driver      |[0m for errors by running:
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	ping 192.168.88.10
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m For more tips, please see
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35;1mssc_controller_driver      |[0m [0m
+[35;1mssc_controller_driver      |[0m The traceback for the exception was written to the log file
+[35;1mssc_controller_driver      |[0m [31mThe traceback for the exception was written to the log file[0m
+[35;1mssc_controller_driver      |[0m Traceback (most recent call last):
+[35;1mssc_controller_driver      |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+[35;1mssc_controller_driver      |[0m     p.start()
+[35;1mssc_controller_driver      |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+[35;1mssc_controller_driver      |[0m     self._start_infrastructure()
+[35;1mssc_controller_driver      |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 263, in _start_infrastructure
+[35;1mssc_controller_driver      |[0m     self._start_server()
+[35;1mssc_controller_driver      |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 212, in _start_server
+[35;1mssc_controller_driver      |[0m     self.server.start()
+[35;1mssc_controller_driver      |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/server.py", line 404, in start
+[35;1mssc_controller_driver      |[0m     raise RLException("""Unable to contact my own server at [%s].
+[35;1mssc_controller_driver      |[0m roslaunch.core.RLException: Unable to contact my own server at [http://192.168.88.10:46501/].
+[35;1mssc_controller_driver      |[0m This usually means that the network is not configured properly.
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m A common cause is that the machine cannot connect to itself.  Please check
+[35;1mssc_controller_driver      |[0m for errors by running:
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	ping 192.168.88.10
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m For more tips, please see
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m 
+[35;1mssc_controller_driver      |[0m Checking log directory for disk usage. This may take a while.
+[35;1mssc_controller_driver      |[0m Press Ctrl-C to interrupt
+[35;1mssc_controller_driver      |[0m Done checking log file disk usage. Usage is <1GB.
+[35;1mssc_controller_driver      |[0m ]2;/opt/carma/vehicle/config/drivers.launch
+[33mcarma-mock-camera-driver   |[0m WARNING: Could not change permissions for folder [/opt/carma/logs/040a7a3a-1787-11ed-8040-9cefd5fa2e35], make sure that the parent folder has correct permissions.
+[33mcarma-mock-camera-driver   |[0m RLException: Unable to contact my own server at [http://192.168.88.10:38311/].
+[33mcarma-mock-camera-driver   |[0m This usually means that the network is not configured properly.
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m A common cause is that the machine cannot connect to itself.  Please check
+[33mcarma-mock-camera-driver   |[0m for errors by running:
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	ping 192.168.88.10
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m For more tips, please see
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m [31mRLException: Unable to contact my own server at [http://192.168.88.10:38311/].
+[33mcarma-mock-camera-driver   |[0m This usually means that the network is not configured properly.
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m A common cause is that the machine cannot connect to itself.  Please check
+[33mcarma-mock-camera-driver   |[0m for errors by running:
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	ping 192.168.88.10
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m For more tips, please see
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[33mcarma-mock-camera-driver   |[0m [0m
+[33mcarma-mock-camera-driver   |[0m The traceback for the exception was written to the log file
+[33mcarma-mock-camera-driver   |[0m Checking log directory for disk usage. This may take a while.
+[33mcarma-mock-camera-driver   |[0m Press Ctrl-C to interrupt
+[33mcarma-mock-camera-driver   |[0m Done checking log file disk usage. Usage is <1GB.
+[33mcarma-mock-camera-driver   |[0m ]2;/opt/carma/install/carma/share/carma/launch/mock_drivers.launch
+[33mcarma-mock-camera-driver   |[0m [31mThe traceback for the exception was written to the log file[0m
+[33mcarma-mock-camera-driver   |[0m Traceback (most recent call last):
+[33mcarma-mock-camera-driver   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/__init__.py", line 347, in main
+[33mcarma-mock-camera-driver   |[0m     p.start()
+[33mcarma-mock-camera-driver   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 305, in start
+[33mcarma-mock-camera-driver   |[0m     self._start_infrastructure()
+[33mcarma-mock-camera-driver   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 263, in _start_infrastructure
+[33mcarma-mock-camera-driver   |[0m     self._start_server()
+[33mcarma-mock-camera-driver   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/parent.py", line 212, in _start_server
+[33mcarma-mock-camera-driver   |[0m     self.server.start()
+[33mcarma-mock-camera-driver   |[0m   File "/opt/ros/noetic/lib/python3/dist-packages/roslaunch/server.py", line 404, in start
+[33mcarma-mock-camera-driver   |[0m     raise RLException("""Unable to contact my own server at [%s].
+[33mcarma-mock-camera-driver   |[0m roslaunch.core.RLException: Unable to contact my own server at [http://192.168.88.10:38311/].
+[33mcarma-mock-camera-driver   |[0m This usually means that the network is not configured properly.
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m A common cause is that the machine cannot connect to itself.  Please check
+[33mcarma-mock-camera-driver   |[0m for errors by running:
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	ping 192.168.88.10
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m For more tips, please see
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 	http://wiki.ros.org/ROS/NetworkSetup
+[33mcarma-mock-camera-driver   |[0m 
+[33mcarma-mock-camera-driver   |[0m 
+[35;1mssc_controller_driver exited with code 1
+[0m[33mcarma-mock-camera-driver exited with code 1
+[0m[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010550.068827633 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010551.069993431 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010552.071190194 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010553.072399143 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010554.072888208 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010555.074111452 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010556.075506866 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010557.076776607 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010558.078095957 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010559.079314823 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010560.080597448 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010561.080922985 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010562.082056748 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010563.082866079 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010564.083804801 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010565.084829193 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010566.085954295 | WARN | getPacket:193 | Velodyne poll() timeout
+[34;1mvelodyne-lidar-driver      |[0m [component_container-3] 1660010567.087181818 | WARN | getPacket:193 | Velodyne poll() timeout
+Gracefully stopping... (press Ctrl+C again to force)
