@@ -53,6 +53,8 @@ services:
       - /home/carma/carma_ws/src/carma-platform/carma/launch:/opt/carma/install/carma/share/carma/launch
       - /home/carma/carma_ws/src/carma-platform/arbitrator/config:/opt/carma/install/arbitrator/share/arbitrator/config 
       - /home/carma/carma_ws/src/carma-platform/emergency_pullover_strategic/launch:/opt/carma/install/emergency_pullover_strategic/share/emergency_pullover_strategic/launch 
+      - /home/carma/carma_ws/src/carma-platform/emergency_pullover_strategic/config:/opt/carma/install/emergency_pullover_strategic/share/emergency_pullover_strategic/config
+      - /home/carma/carma_ws/src/carma-platform/platooning_control/config:/opt/carma/install/platooning_control/share/platooning_control/config
     command: bash -c 'wait-for-it.sh localhost:11311 -- roslaunch /opt/carma/vehicle/config/carma_docker.launch'
 
   platform_ros2:
@@ -73,6 +75,7 @@ services:
       - /home/carma/carma_ws/src/carma-platform/carma/launch/guidance.launch.py:/opt/carma/install_ros2/carma/share/carma/launch/guidance.launch.py
       - /home/carma/carma_ws/src/carma-platform/carma/launch:/opt/carma/install_ros2/carma/share/carma/launch
       - /home/carma/carma_ws/src/carma-platform/subsystem_controllers/config:/opt/carma/install_ros2/subsystem_controllers/share/subsystem_controllers/config
+      - /home/carma/carma_ws/src/carma-platform/trajectory_executor/config:/opt/carma/install_ros2/trajectory_executor/share/trajectory_executor/config
     command: bash -c 'source /opt/carma/install_ros2/setup.bash && ros2 launch /opt/carma/vehicle/config/carma_docker.launch.py'
 
   ros1_bridge:
